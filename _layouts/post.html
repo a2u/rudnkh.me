@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+    </p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  <!-- 
+  <div class="pagination">
+    {% if page.previous %}
+      <a class="post-meta" href="{{ page.previous.url | prepend: site.baseurl }}">
+        <i class="fa fa-arrow-left"></i> {{ page.previous.title }}
+      </a>
+    {% endif %}
+
+    {% if page.next %}
+      <a class="post-meta" href="{{ page.next.url | prepend: site.baseurl }}">
+        {{ page.next.title }} <i class="fa fa-arrow-right"></i>
+      </a>
+    {% endif %}
+  </div> -->
+
+  <div align="center">
+  	<a class="arrow" href="#">
+      <i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>

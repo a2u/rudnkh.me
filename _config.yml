@@ -1,0 +1,43 @@
+source:       .
+destination:  ./docs
+plugins_dir:  _plugins
+layouts_dir:  _layouts
+data_dir:     _data
+includes_dir: _includes
+collections:
+  posts:
+    output:   true
+permalink:        /posts/:title
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
+
+# author
+author:
+  name: 'Vitalii Rudnykh'
+  url: https://github.com/a2u
+
+plugins: [jekyll-polyglot, jekyll-paginate]
+
+include: ['_pages']
+exclude: ['LICENSE.md', 'README.md', 'publi.sh', 'Gemfile.lock']
+# Setup
+title:            
+  en: Vitalii Rudnykh
+  ru: Виталий Рудных
+
+url: https://rudnkh.me
+
+paginate: 5
+# Custom vars
+version: 1.3.1
+
+#Polyglot
+languages: ["en", "ru"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+data_dir: ./_data
