@@ -1,0 +1,9 @@
+baseurl: 'https://rudnkh.me'
+minify: false
+publishDir: 'docs'
+permalinks:
+  notes: /notes/:filename/
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5
