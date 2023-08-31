@@ -17,4 +17,4 @@ Price
 : €12.50 ($13.56) / two persons
 
 Notes
-: A very charming brunch restaurant, located almost in the city center. Very clean and pleasant, with an inner courtyard outside. Most likely, I will come back here again.
+: A very charming brunch restaurant, located almost in the city center. Very clean and pleasant, with an inner courtyard. Most likely, I will come back here again.
