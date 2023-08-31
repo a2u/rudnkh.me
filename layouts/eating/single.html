@@ -1,0 +1,7 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+
+{{ .Content | replaceRE "(<h[1-6]\\sid=\"([^\"]+)\"\\s?>)(.+)(</h[1-6]+>)" "${1}<a href=\"#${2}\">${3}</a>${4}" | safeHTML }}
+
+{{ partial "image-gallery.html" . }}
+{{ partial "footer.html" . }}

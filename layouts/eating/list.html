@@ -1,11 +1,10 @@
 {{ partial "header.html" . }}
-
 <small><a href="/">rudnkh.me</a></small>
-<small>/notes</small>
+<small>/eating</small>
 <hr>
 
 <div class="wrapper">
-{{ range (where .Site.RegularPages "Type" "in" (slice "notes")).GroupByDate "2006" }}
+{{ range (where .Site.RegularPages "Type" "in" (slice "eating")).GroupByDate "2006" }}
 <dt>{{ .Key }}</dt>
   {{ range .Pages }}
 <ul>
