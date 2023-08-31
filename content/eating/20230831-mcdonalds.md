@@ -11,7 +11,7 @@ Date
 : 31 Aug 2023
 
 Location
-: Porto, Portugal 🇵🇹 ([Google Maps](https://goo.gl/maps/PfjLR7WYrSF1wyan6))
+: Porto, Portugal 🇵🇹 ([Google Maps](https://goo.gl/maps/3pnq2maCcMhSrThs6))
 
 Price
 : €18.10 ($19.64) / two persons
