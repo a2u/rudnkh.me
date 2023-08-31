@@ -7,3 +7,5 @@ sitemap:
   changefreq: daily
   filename: sitemap.xml
   priority: 0.5
+params:
+  cdn: 'https://cdn.rudnkh.me/'
