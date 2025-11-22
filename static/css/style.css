@@ -1,0 +1,381 @@
+/* what do u want? */
+html {
+    font-size: 13px
+}
+* {
+    box-sizing: border-box
+}
+*,
+body {
+    margin: 0;
+    padding: 0
+}
+body {
+    background: #15161d;
+    color: hsla(0, 0%, 100%, .8);
+    line-height: 1.65;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: 1rem;
+    margin-bottom: 24px
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--green);
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+a {
+    position: relative;
+    color: var(--green);
+    text-decoration: none
+}
+a:hover {
+    text-decoration: underline
+}
+.measure {
+    max-width: 34em
+}
+.section {
+    margin: 64px
+}
+
+.footer {
+    color: #444;
+}
+
+@media (max-width: 600px) {
+    .time {
+        display: none
+    }
+    .section {
+        margin: 48px 24px
+    }
+}
+.section>:last-child {
+    margin-bottom: 0
+}
+
+
+em {
+    opacity: .5;
+    font-style: italic
+}
+
+dt {
+    font-weight: 600
+}
+dt:before {
+    content: '- '
+}
+dd {
+    margin-bottom: 24px
+}
+:root {
+    --green: #00FE8B;
+}
+li {
+list-style-type: none;
+}
+
+ul {
+    margin-left: 10px;
+    padding-left: 10px;
+   }
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?uksa1l');
+  src:  url('fonts/icomoon.eot?uksa1l#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?uksa1l') format('truetype'),
+    url('fonts/icomoon.woff?uksa1l') format('woff'),
+    url('fonts/icomoon.svg?uksa1l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelop:before {
+  content: "\ea83";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-instagram:before {
+  content: '\ea92';
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-lastfm:before {
+  content: "\eacc";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+span {
+	font-size: 24px;
+	color: #fff;
+}
+
+span:hover {
+        color: var(--green);
+}
+
+#social a:hover {
+	text-decoration: none;
+}
+#social span {
+	margin: 4px;
+}
+
+.skills {
+color: #333;
+}
+
+img {
+/*  -webkit-filter: grayscale(100%);  
+  filter: grayscale(100%);          */
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+
+.wrapper ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.wrapper li {
+	text-align: left;
+	flex-grow: 1;
+	position: relative;
+}
+
+.wrapper li:last-child {
+	max-width: 70px;
+	border-right: none;
+}
+
+hr { 
+	border: 0;
+	height: 1px;
+	margin-top: 5px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* Inline code */
+code {
+	background: rgba(255, 255, 255, 0.08);
+	color: var(--green);
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 0.95em;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Code blocks */
+pre {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 16px;
+	border-radius: 6px;
+	overflow-x: auto;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	margin-bottom: 24px;
+}
+
+pre code {
+	background: none;
+	border: none;
+	padding: 0;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* Blockquotes */
+blockquote {
+	border-left: 3px solid var(--green);
+	padding-left: 20px;
+	margin-left: 0;
+	font-style: italic;
+	opacity: 0.9;
+}
+
+/* Links improvements */
+a code {
+	color: var(--green);
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+/* Games table */
+.games-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 24px;
+}
+
+.games-table thead {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.games-table th {
+	text-align: left;
+	padding: 12px 0;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.games-table td {
+	padding: 12px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.games-table tbody tr:hover {
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+.date-cell {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 0.9em;
+	min-width: 100px;
+}
+
+.game-cell {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.rating-cell {
+	white-space: nowrap;
+}
+
+/* Star rating */
+.star-rating {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+}
+
+.star {
+	color: rgba(255, 255, 255, 0.15);
+	font-size: 1.4em;
+	line-height: 1;
+	transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+	display: inline-block;
+}
+
+.star.filled {
+	color: var(--green);
+	text-shadow: 0 0 8px rgba(0, 254, 139, 0.4), 0 0 16px rgba(0, 254, 139, 0.15);
+	filter: drop-shadow(0 0 3px rgba(0, 254, 139, 0.5));
+	transform: scale(1.06);
+}
+
+.star-rating:hover .star.filled {
+	transform: scale(1.12);
+	text-shadow: 0 0 14px rgba(0, 254, 139, 0.8), 0 0 28px rgba(0, 254, 139, 0.4);
+}
+
+.rating-cell .star-rating {
+	justify-content: flex-start;
+}
+
+.game-meta .star-rating {
+	margin-left: 8px;
+}
+
+.game-meta .star {
+	font-size: 1.1em;
+}
+
+.game-meta .rating-line {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 8px;
+}
+
+.rating-value {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.game-meta {
+	margin-bottom: 32px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-meta p {
+	margin-bottom: 12px;
+}
+
+.game-meta strong {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 600px) {
+	.games-table {
+		font-size: 0.9em;
+	}
+	
+	.date-cell {
+		min-width: 80px;
+	}
+}

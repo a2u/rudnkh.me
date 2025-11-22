@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+<small><a href="/">rudnkh.me</a></small>
+<small>/eating</small>
+<hr>
+
+<div class="wrapper">
+{{ range (where .Site.RegularPages "Type" "in" (slice "eating")).GroupByDate "2006" }}
+<dt>{{ .Key }}</dt>
+  {{ range .Pages }}
+<ul>
+  <li>
+    <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  <li>
+    {{ .Date.Format (.Site.Params.dateFormat | default "02 Jan" ) }}
+  </li>
+</ul>
+  {{- end -}}
+{{ end }}
+</div>
+
+{{ partial "footer.html" . }}

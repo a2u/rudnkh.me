@@ -1,0 +1,11 @@
+baseurl: 'https://rudnkh.me'
+minify: true
+publishDir: 'docs'
+permalinks:
+  playing: /playing/:contentbasename/
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5
+params:
+  cdn: '/images/'

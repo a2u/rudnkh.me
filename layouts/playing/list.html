@@ -1,0 +1,43 @@
+{{ partial "header.html" . }}
+<small><a href="/">rudnkh.me</a></small>
+<small>/playing</small>
+<hr>
+
+<div class="wrapper">
+<table class="games-table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Game</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ $games := where .Site.RegularPages "Type" "in" (slice "playing") }}
+    {{ range $games.ByDate.Reverse }}
+      <tr>
+        <td class="date-cell">{{ .Date.Format "02 Jan 2006" }}</td>
+        <td class="game-cell">
+          <a href="{{ .RelPermalink }}">{{ .Title }} ({{ .Params.year }})</a>
+        </td>
+        <td class="rating-cell">
+          <div class="star-rating" data-rating="{{ .Params.rating | default 0 }}">
+            {{ $rating := .Params.rating | default 0 }}
+            {{ range $i := (seq 5) }}
+              {{ $starValue := $i }}
+              {{ if ge $rating $starValue }}
+                <span class="star filled">★</span>
+              {{ else }}
+                <span class="star">☆</span>
+              {{ end }}
+            {{ end }}
+          </div>
+        </td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+
+{{ partial "footer.html" . }}
+

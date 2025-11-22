@@ -1,0 +1,5 @@
+{{ range .Params.photos }}
+<a href="{{ $.Site.Params.cdn }}{{ . }}">
+	<img src="{{ $.Site.Params.cdn }}{{ . }}">
+</a>
+{{ end }}
