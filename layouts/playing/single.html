@@ -1,17 +1,11 @@
 {{ partial "header.html" . }}
-<small><a href="/">rudnkh.me</a></small>
-<small><a href="/playing">/playing</a></small>
-<hr>
+<small><a href="/">rudnkh.me</a> / <a href="/playing">playing</a></small>
 
-<div class="wrapper">
+<div class="section">
   <h1>{{ .Title }} ({{ .Params.year }})</h1>
   
-  <div class="game-meta">
-    <p><strong>Completed:</strong> {{ .Date.Format "02 Jan 2006" }}</p>
-    <p class="rating-line"><strong>Rating:</strong> 
-      <span class="rating-value">{{ .Params.rating | default 0 }}/5</span>
-    </p>
-  </div>
+  <p><strong>Completed:</strong> {{ .Date.Format "02 Jan 2006" }}</p>
+  <p><strong>Rating:</strong> {{ .Params.rating | default 0 }}/5</p>
 
   {{ .Content }}
 
