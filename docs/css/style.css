@@ -40,11 +40,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.15rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.95);
-    margin-top: 48px;
-    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 40px;
+    margin-bottom: 18px;
 }
 
 h3 {
@@ -185,22 +185,24 @@ img {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
   margin-top: 24px;
 }
 
 .gallery-item {
   display: block;
   overflow: hidden;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.25s ease;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .gallery-item:hover {
-  transform: scale(1.02);
-  border-color: var(--green);
+  transform: translateY(-2px);
+  border-color: rgba(0, 254, 139, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 254, 139, 0.1);
   text-decoration: none;
 }
 
@@ -208,11 +210,18 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  transition: opacity 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .gallery-item:hover img {
-  opacity: 0.9;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -393,16 +402,21 @@ a code {
 	font-weight: normal;
 }
 
-.game-meta {
-	margin-bottom: 24px;
+.game-info {
+	margin-bottom: 32px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.game-meta p {
-	margin-bottom: 8px;
+.game-info p {
+	margin-bottom: 6px;
+	font-size: 0.95rem;
+	line-height: 1.4;
 }
 
-.game-meta strong {
-	color: rgba(255, 255, 255, 0.9);
+.game-info strong {
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: 500;
 }
 
 @media (max-width: 600px) {

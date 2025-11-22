@@ -4,8 +4,10 @@
 <div class="section">
   <h1>{{ .Title }} ({{ .Params.year }})</h1>
   
-  <p><strong>Completed:</strong> {{ .Date.Format "02 Jan 2006" }}</p>
-  <p><strong>Rating:</strong> {{ .Params.rating | default 0 }}/5</p>
+  <div class="game-info">
+    <p><strong>Completed:</strong> {{ .Date.Format "02 Jan 2006" }}</p>
+    <p><strong>Rating:</strong> {{ .Params.rating | default 0 }}/5</p>
+  </div>
 
   {{ .Content }}
 
