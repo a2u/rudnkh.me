@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+<small><a href="/">rudnkh.me</a> / <a href="/watching">watching</a></small>
+
+<div class="section">
+  <h1>{{ .Title }} ({{ .Params.year }})</h1>
+  
+  <div class="game-info">
+    <p><strong>Watched:</strong> <span class="meta-value">{{ .Date.Format "02 Jan 2006" }}</span></p>
+    {{ if .Params.type_media }}
+    <p><strong>Type:</strong> {{ .Params.type_media }}</p>
+    {{ end }}
+  </div>
+
+  <div class="game-content">
+    {{ .Content }}
+  </div>
+
+  {{ if .Params.photos }}
+    <h2>Screenshots</h2>
+    {{ partial "image-gallery.html" . }}
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+

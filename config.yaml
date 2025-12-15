@@ -3,6 +3,8 @@ minify: true
 publishDir: 'docs'
 permalinks:
   playing: /playing/:contentbasename/
+  writeups: /writeups/:contentbasename/
+  watching: /watching/:contentbasename/
 sitemap:
   changefreq: daily
   filename: sitemap.xml

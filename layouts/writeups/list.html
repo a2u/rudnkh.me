@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+<small><a href="/">rudnkh.me</a></small>
+<small>/writeups</small>
+<hr>
+
+<div class="wrapper">
+<table class="games-table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Challenge</th>
+      <th>Platform</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ $writeups := where .Site.RegularPages "Type" "in" (slice "writeups") }}
+    {{ range $writeups.ByDate.Reverse }}
+      <tr>
+        <td class="date-cell">{{ .Date.Format "02 Jan 2006" }}</td>
+        <td class="game-cell">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </td>
+        <td class="platform-cell">
+          <span class="badge">{{ .Params.platform }}</span>
+        </td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+
+{{ partial "footer.html" . }}
+

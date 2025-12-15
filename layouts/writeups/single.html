@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+<small><a href="/">rudnkh.me</a> / <a href="/writeups">writeups</a></small>
+
+<div class="section">
+  <h1>{{ .Title }}</h1>
+  
+  <div class="game-info">
+    <p><strong>Platform:</strong> {{ .Params.platform }}</p>
+    <p><strong>Date:</strong> {{ .Date.Format "02 Jan 2006" }}</p>
+    {{ if .Params.tags }}
+    <p><strong>Tags:</strong> {{ delimit .Params.tags ", " }}</p>
+    {{ end }}
+  </div>
+
+  {{ .Content }}
+</div>
+
+{{ partial "footer.html" . }}
+

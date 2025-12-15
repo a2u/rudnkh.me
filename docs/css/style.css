@@ -63,8 +63,14 @@ a:hover {
 .measure {
     max-width: 34em
 }
+
+.section:not(.measure) {
+    max-width: 800px;
+}
 .section {
-    margin: 64px
+    margin: 64px auto;
+    max-width: 800px;
+    padding: 0 32px;
 }
 
 .footer {
@@ -76,7 +82,9 @@ a:hover {
         display: none
     }
     .section {
-        margin: 48px 24px
+        margin: 32px 16px;
+        padding: 0 16px;
+        max-width: 100%;
     }
 }
 .section>:last-child {
@@ -314,6 +322,7 @@ a code {
 	width: 100%;
 	border-collapse: collapse;
 	margin-top: 24px;
+	table-layout: auto;
 }
 
 .games-table thead {
@@ -339,7 +348,7 @@ a code {
 .date-cell {
 	color: rgba(255, 255, 255, 0.6);
 	font-size: 0.9em;
-	min-width: 100px;
+	white-space: nowrap;
 }
 
 .game-cell {
@@ -403,28 +412,86 @@ a code {
 }
 
 .game-info {
-	margin-bottom: 32px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	margin-bottom: 40px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .game-info p {
-	margin-bottom: 6px;
+	margin-bottom: 8px;
 	font-size: 0.95rem;
-	line-height: 1.4;
+	line-height: 1.6;
+	color: rgba(255, 255, 255, 0.75);
 }
 
 .game-info strong {
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 0.85);
 	font-weight: 500;
 }
 
+.section p {
+	max-width: 100%;
+	line-height: 1.7;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 20px;
+}
+
 @media (max-width: 600px) {
+	.wrapper {
+		padding: 10px 16px;
+	}
+	
 	.games-table {
-		font-size: 0.9em;
+		font-size: 0.85em;
+		width: 100%;
+		table-layout: fixed;
+	}
+	
+	.games-table th,
+	.games-table td {
+		padding: 8px 4px;
+	}
+	
+	.games-table th:nth-child(1),
+	.games-table td:nth-child(1) {
+		width: 20%;
+	}
+	
+	.games-table th:nth-child(2),
+	.games-table td:nth-child(2) {
+		width: 60%;
+	}
+	
+	.games-table th:nth-child(3),
+	.games-table td:nth-child(3) {
+		width: 20%;
 	}
 	
 	.date-cell {
-		min-width: 80px;
+		font-size: 0.85em;
+		white-space: normal;
 	}
+	
+	.game-cell {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		white-space: normal;
+		line-height: 1.4;
+	}
+}
+
+/* Badges */
+.badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 2px;
+	font-size: 0.8em;
+	font-weight: 400;
+	border: 1px solid rgba(0, 254, 139, 0.3);
+	color: var(--green);
+}
+
+.platform-cell {
+	white-space: nowrap;
+	font-size: 0.95em;
 }

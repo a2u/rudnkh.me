@@ -1,0 +1,31 @@
+{{ partial "header.html" . }}
+<small><a href="/">rudnkh.me</a></small>
+<small>/watching</small>
+<hr>
+
+<div class="wrapper">
+<table class="games-table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ $watching := where .Site.RegularPages "Type" "in" (slice "watching") }}
+    {{ range $watching.ByDate.Reverse }}
+      <tr>
+        <td class="date-cell">{{ .Date.Format "02 Jan 2006" }}</td>
+        <td class="game-cell">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </td>
+        <td class="date-cell">{{ .Params.year }}</td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>
+</div>
+
+{{ partial "footer.html" . }}
+
