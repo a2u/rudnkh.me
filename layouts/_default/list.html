@@ -1,23 +1,16 @@
 {{ partial "header.html" . }}
-
-<small><a href="/">rudnkh.me</a></small>
-<small>/notes</small>
-<hr>
-
-<div class="wrapper">
-{{ range (where .Site.RegularPages "Type" "in" (slice "notes")).GroupByDate "2006" }}
-<dt>{{ .Key }}</dt>
-  {{ range .Pages }}
-<ul>
-  <li>
-    <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
-  </li>
-  <li>
-    {{ .Date.Format (.Site.Params.dateFormat | default "02 Jan" ) }}
-  </li>
-</ul>
-  {{- end -}}
-{{ end }}
-</div>
-
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+      {{ with .Pages.ByDate.Reverse }}
+      <ul class="entries">
+        {{ range . }}
+        <li>
+          <time>{{ if not .Date.IsZero }}{{ .Date.Format "2006-01-02" }}{{ end }}</time>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </article>
 {{ partial "footer.html" . }}

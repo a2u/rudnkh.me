@@ -1,7 +1,0 @@
-<div class="gallery">
-{{ range .Params.photos }}
-  <a href="{{ $.Site.Params.cdn }}{{ . }}" class="gallery-item" target="_blank">
-    <img src="{{ $.Site.Params.cdn }}{{ . }}" loading="lazy" alt="Screenshot">
-  </a>
-{{ end }}
-</div>

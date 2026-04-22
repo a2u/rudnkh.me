@@ -1,0 +1,23 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>On small tools — rudnkh</title><meta name=description content="vitalii rudnykh — personal site"><link rel="shortcut icon" href=/favicon.ico><link rel=stylesheet href=/css/style.css></head><body class="section notes notes-single"><div class=container><div class=topbar><a class=brand href=/>rudnkh.me</a>
+<span class=here><a href=/notes/>/notes</a></span></div><article><h1>On small tools</h1><p class=meta>2025-10-14</p><p>There&rsquo;s a specific kind of joy in tools that do one thing, do it well, and
+stay out of your way. <code>fzf</code> is the canonical example — a single fuzzy finder
+that quietly becomes the glue between everything else.</p><h2 id=what-makes-a-good-small-tool>What makes a good small tool</h2><ul><li><strong>Composable.</strong> Speaks stdin/stdout by default. Every feature exposed as
+a flag, not a config file.</li><li><strong>Fast.</strong> You don&rsquo;t notice it&rsquo;s running. If you notice, it&rsquo;s too slow.</li><li><strong>Boring.</strong> No surprises. No auto-update prompts. No telemetry.</li><li><strong>Readable source.</strong> You can sit down on a weekend and understand the
+whole thing.</li></ul><p>The inverse — the &ldquo;platform&rdquo; tool that tries to absorb five adjacent
+workflows — almost always rots. Either the maintainer burns out, or the
+feature surface becomes a museum of deprecated ideas.</p><h2 id=current-small-tools-i-depend-on>Current small tools I depend on</h2><pre tabindex=0><code>rg    - ripgrep, grep replacement
+fd    - find replacement
+bat   - cat with syntax highlighting
+eza   - ls replacement
+jq    - JSON swiss army knife
+gh    - GitHub CLI
+mise  - runtime version manager
+</code></pre><p>None of these are clever. They all just work.</p></article></div><footer class=site><span>vitalii rudnykh</span>
+<span class=dot>·</span>
+<a href=mailto:i@rudnkh.me>email</a>
+<span class=dot>·</span>
+<a href=https://github.com/a2u>github</a>
+<span class=dot>·</span>
+<a href=https://twitter.com/rudnkh>twitter</a>
+<span class=dot>·</span>
+<a href=/index.xml>feed</a></footer></body></html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stack on rudnkh</title><link>https://rudnkh.me/tags/stack/</link><description>Recent content in Stack on rudnkh</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://rudnkh.me/tags/stack/index.xml" rel="self" type="application/rss+xml"/><item><title>Valid Parentheses</title><link>https://rudnkh.me/writeups/valid-parentheses/</link><pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/valid-parentheses/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Given a string of brackets &lt;code&gt;()[]{}&lt;/code&gt;, determine whether it is valid — every
+opening bracket has a matching closing bracket, and they are properly
+nested.&lt;/p&gt;
+&lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
+&lt;p&gt;Classic stack problem. Push opening brackets, pop and compare on closing.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;isValid&lt;/span&gt;(s: str) &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt; bool:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pairs &lt;span style="color:#f92672"&gt;=&lt;/span&gt; {&lt;span style="color:#e6db74"&gt;&amp;#34;)&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;(&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;]&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;[&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;}&amp;#34;&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;{&amp;#34;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; stack &lt;span style="color:#f92672"&gt;=&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;for&lt;/span&gt; ch &lt;span style="color:#f92672"&gt;in&lt;/span&gt; s:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; ch &lt;span style="color:#f92672"&gt;in&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;([{&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; stack&lt;span style="color:#f92672"&gt;.&lt;/span&gt;append(ch)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;elif&lt;/span&gt; &lt;span style="color:#f92672"&gt;not&lt;/span&gt; stack &lt;span style="color:#f92672"&gt;or&lt;/span&gt; stack&lt;span style="color:#f92672"&gt;.&lt;/span&gt;pop() &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; pairs[ch]:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;False&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#f92672"&gt;not&lt;/span&gt; stack
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="complexity"&gt;Complexity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Time:&lt;/strong&gt; O(n)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Space:&lt;/strong&gt; O(n) — worst case the stack is as long as the input.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="key-insights"&gt;Key Insights&lt;/h2&gt;
+&lt;p&gt;Two edge cases that trip people up:&lt;/p&gt;</description></item></channel></rss>

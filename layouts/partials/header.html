@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>vit ✨</title>
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="description" content="Vitalii Rudnykh">
-    <meta property="og:title" content="Vitalii Rudnykh">
-    <meta property="og:description" content="A tech enthusiast">
-    <meta property="og:url" content="https://rudnkh.me">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@rudnkh">
-    <meta name="twitter:creator" content="@rudnkh">
-    <meta name="twitter:title" content="Vitaliy Rudnykh @rudnkh">
-    <meta name="twitter:description" content="A tech enthusiast">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link href="/css/style.css" rel="stylesheet">
-    <script>
-        console.log("Follow the white rabbit.");
-    </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title | default "rudnkh.me" }}{{ else }}{{ .Title }} — {{ .Site.Title | default "rudnkh.me" }}{{ end }}</title>
+  <meta name="description" content="{{ .Description | default "vitalii rudnykh — personal site" }}">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-
-<body>
-    <div id="root">
-        <header class="measure section">
+{{- $class := "home" -}}
+{{- if not .IsHome -}}
+  {{- $section := .Section -}}
+  {{- if .IsPage -}}
+    {{- $class = printf "section %s %s-single" $section $section -}}
+  {{- else -}}
+    {{- $class = printf "section %s %s-list" $section $section -}}
+  {{- end -}}
+{{- end -}}
+<body class="{{ $class }}">
+  <div class="container">
+{{ if not .IsHome }}
+    <div class="topbar">
+      <a class="brand" href="/">rudnkh.me</a>
+      <span class="here">
+        {{- if .Section -}}
+          <a href="/{{ .Section }}/">/{{ .Section }}</a>
+        {{- end -}}
+      </span>
+    </div>
+{{ end }}

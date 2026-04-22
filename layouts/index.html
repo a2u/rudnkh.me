@@ -1,4 +1,14 @@
 {{ partial "header.html" . }}
-{{ .Content }}
-{{ partial "footer_cookie.html" . }}
-
+    <header>
+      <h1>Vitalii Rudnykh</h1>
+      <p class="tagline">engineer · skeptic-curious · problem solver.</p>
+    </header>
+    <nav class="primary">
+      <ul>
+        <li><a href="/notes/">notes</a><span class="muted">short essays &amp; technical bits</span></li>
+        <li><a href="/pages/">pages</a><span class="muted">index of topics</span></li>
+        <li><a href="/now/">now</a><span class="muted">what i'm up to lately</span></li>
+        <li><a href="/about/">about</a><span class="muted">more about me</span></li>
+      </ul>
+    </nav>
+{{ partial "footer.html" . }}
