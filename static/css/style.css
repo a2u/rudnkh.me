@@ -162,6 +162,26 @@ ul.entries li a { color: var(--fg-strong); }
 ul.entries li a:hover { color: var(--green); }
 
 article .meta { font-size: 0.88em; margin: -0.3em 0 2em; color: var(--fg-muted); }
+article .page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+}
+article .page-head h1 { margin: 0; }
+article .updated {
+  font-size: 0.82em;
+  margin: 0;
+  padding: 0.25em 0.7em;
+  border: 1px solid rgba(0, 254, 139, 0.35);
+  border-radius: 3px;
+  color: var(--fg-muted);
+  white-space: nowrap;
+  flex: none;
+}
+article .updated time { color: var(--green); margin-left: 0.3em; font-weight: 500; }
 
 /* Tables */
 table { width: 100%; border-collapse: collapse; margin: 1.2em 0; }

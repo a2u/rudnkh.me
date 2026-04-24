@@ -1,7 +1,14 @@
 {{ partial "header.html" . }}
     <article>
-      <h1>{{ .Title }}</h1>
-      {{ if not .Date.IsZero }}<p class="meta">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
+      {{ if eq .RelPermalink "/now/" }}
+        <div class="page-head">
+          <h1>{{ .Title }}</h1>
+          {{ if not .Lastmod.IsZero }}<p class="updated">last updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2 January 2006" }}</time></p>{{ end }}
+        </div>
+      {{ else }}
+        <h1>{{ .Title }}</h1>
+        {{ if not .Date.IsZero }}<p class="meta">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
+      {{ end }}
       {{ .Content }}
     </article>
 {{ partial "footer.html" . }}

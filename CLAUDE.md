@@ -20,7 +20,7 @@ There is no test suite, linter, or CI workflow.
 The site is served by **GitHub Pages from the `docs/` directory on `master`** (no build action). This means:
 
 - After editing source, you MUST run `hugo --cleanDestinationDir` and commit `docs/` together with the source changes — otherwise the live site lags behind `master`.
-- `CNAME` in the repo root maps the custom domain; Hugo copies it into `docs/` on each build.
+- `static/CNAME` maps the custom domain. It lives in `static/` (not the repo root) so Hugo copies it into `docs/` on each build — `--cleanDestinationDir` would otherwise wipe it.
 - `publishDir: 'docs'` is set in `config.yaml`.
 
 ## Content structure
@@ -31,7 +31,7 @@ Top-level sections live under `content/` and each has custom permalinks configur
 - `playing/`, `watching/`, `writeups/` — dated lists with content frontmatter (rating, year, platform)
 - `pages/` — topic index (vinc.cc-style)
 
-Standalone pages at the root of `content/`: `about.md`, `now.md`, `uses.md`, `links.md`.
+Standalone pages at the root of `content/`: `now.md`, `uses.md`, `links.md`.
 
 ## Layouts
 
@@ -44,6 +44,14 @@ One layout family covers the whole site:
 - `layouts/partials/{header,footer}.html` — shared chrome
 
 Adding a new section **does not** require new layout files — `_default/*` handles it. Per-section layouts were deliberately removed; don't recreate `layouts/<section>/*` unless a section needs a truly different shape.
+
+### Special case: `/now`
+
+`_default/single.html` branches on `eq .RelPermalink "/now/"`:
+
+- The `/now` page uses **`.Lastmod`** (not `.Date`) as "last updated". Its frontmatter carries `lastmod:`, no `date:`.
+- Title and badge are wrapped in a `<div class="page-head">` flexbox so the badge renders to the right of the `<h1>`. Regular single pages keep the old shape (`<h1>` + gray `<p class="meta">` date).
+- The `.updated` badge styling (green-tinted border, green-tinted date) is in `static/css/style.css`. If you refactor `single.html`, preserve this branch or the badge layout breaks.
 
 ## Body-class convention (CSS depends on this)
 
@@ -65,6 +73,11 @@ Defined as CSS custom properties at the top of `static/css/style.css`:
 - Monospace stack led by `Menlo`
 
 Dark-only — no `prefers-color-scheme: light` rules. If adding light mode, do it as an explicit feature, not by mirroring dark.
+
+## Small conventions
+
+- **Temporarily hiding nav items**: use Hugo template comments `{{/* ... */}}` (not HTML `<!-- -->`) so the markup doesn't leak into the output. Current example: `layouts/index.html` hides `/notes` and `/pages` this way.
+- **Footer year**: `layouts/partials/footer.html` uses `{{ now.Year }}` — don't hardcode the year.
 
 ## Git
 

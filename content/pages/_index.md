@@ -12,4 +12,3 @@ topics, loosely organized as follows:
 - [Now](/now/)
 - [Uses](/uses/)
 - [Links](/links/)
-- [About](/about/)
