@@ -1,5 +1,5 @@
 baseurl: 'https://rudnkh.me'
-title: 'rudnkh'
+title: 'Vitalii Rudnykh'
 minify:
   minifyOutput: true
 publishDir: 'docs'

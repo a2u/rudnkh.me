@@ -106,15 +106,17 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2em 0; }
 
 .topbar {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4em;
   align-items: baseline;
   margin: 0 0 3em;
   font-size: 0.9rem;
 }
 .topbar a.brand { color: var(--fg-strong); }
 .topbar a.brand:hover { color: var(--green); text-decoration: none; }
-.topbar .here a { color: var(--fg-muted); }
-.topbar .here a:hover { color: var(--green); }
+.topbar .sep { color: var(--fg-muted); }
+.topbar a.crumb { color: var(--fg-muted); }
+.topbar a.crumb:hover { color: var(--green); }
 
 footer.site {
   max-width: 680px;
