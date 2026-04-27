@@ -1,6 +1,6 @@
 ---
 title: "Now"
-lastmod: 2026-04-24
+lastmod: 2026-04-27
 ---
 
 - Building a new product in AI agent security
