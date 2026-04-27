@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rudnkh</title><link>https://rudnkh.me/</link><description>Recent content on rudnkh</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://rudnkh.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Now</title><link>https://rudnkh.me/now/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/now/</guid><description>&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rudnkh</title><link>http://localhost:1313/</link><description>Recent content on rudnkh</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Now</title><link>http://localhost:1313/now/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/now/</guid><description>&lt;ul&gt;
 &lt;li&gt;Building a new product in AI agent security&lt;/li&gt;
 &lt;li&gt;Studying David Chalmers&amp;rsquo; theory of consciousness&lt;/li&gt;
+&lt;li&gt;Watching The X-Files, currently on season 2&lt;/li&gt;
 &lt;li&gt;Enjoying life in Portugal&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Uses</title><link>https://rudnkh.me/uses/</link><pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/uses/</guid><description>&lt;p&gt;Tools and gear I use daily.&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>Uses</title><link>http://localhost:1313/uses/</link><pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/uses/</guid><description>&lt;p&gt;Tools and gear I use daily.&lt;/p&gt;
 &lt;h2 id="hardware"&gt;Hardware&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Laptop:&lt;/strong&gt; MacBook Pro 14&amp;quot; (M3 Pro, 36 GB RAM)&lt;/li&gt;
@@ -36,7 +37,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Obsidian&lt;/strong&gt; for the daily brain-dump vault.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Marked 2&lt;/strong&gt; for previewing markdown.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Getting back into chess at 30</title><link>https://rudnkh.me/notes/chess-comeback/</link><pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/chess-comeback/</guid><description>&lt;p&gt;Restarted chess seriously in January after a decade of dabbling. Current
+&lt;/ul&gt;</description></item><item><title>Getting back into chess at 30</title><link>http://localhost:1313/notes/chess-comeback/</link><pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/notes/chess-comeback/</guid><description>&lt;p&gt;Restarted chess seriously in January after a decade of dabbling. Current
 Lichess rapid: 1970. Target: 2200 by year-end.&lt;/p&gt;
 &lt;h2 id="whats-working"&gt;What&amp;rsquo;s working&lt;/h2&gt;
 &lt;ul&gt;
@@ -64,10 +65,10 @@ worth the book on its own.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The single biggest lesson so far: &lt;strong&gt;sit on your hands&lt;/strong&gt;. Almost every
 blunder in my loss database comes from a move I could have spent thirty
-more seconds on.&lt;/p&gt;</description></item><item><title>Andor, Season 2</title><link>https://rudnkh.me/watching/andor-s2/</link><pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/watching/andor-s2/</guid><description>&lt;p&gt;The best thing Star Wars has done in decades. Tony Gilroy writing adult
+more seconds on.&lt;/p&gt;</description></item><item><title>Andor, Season 2</title><link>http://localhost:1313/watching/andor-s2/</link><pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/watching/andor-s2/</guid><description>&lt;p&gt;The best thing Star Wars has done in decades. Tony Gilroy writing adult
 political drama with grown-up pacing and stakes. The prison arc in S1 was
 already a small miracle; S2 keeps the bar there for twelve episodes.&lt;/p&gt;
-&lt;p&gt;Watch even if you don&amp;rsquo;t care about Star Wars. Especially if you don&amp;rsquo;t.&lt;/p&gt;</description></item><item><title>Binary Search — and how I kept getting it wrong</title><link>https://rudnkh.me/writeups/binary-search/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/binary-search/</guid><description>&lt;p&gt;Binary search is the algorithm I&amp;rsquo;ve &amp;ldquo;known&amp;rdquo; the longest and written
+&lt;p&gt;Watch even if you don&amp;rsquo;t care about Star Wars. Especially if you don&amp;rsquo;t.&lt;/p&gt;</description></item><item><title>Binary Search — and how I kept getting it wrong</title><link>http://localhost:1313/writeups/binary-search/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/writeups/binary-search/</guid><description>&lt;p&gt;Binary search is the algorithm I&amp;rsquo;ve &amp;ldquo;known&amp;rdquo; the longest and written
 incorrectly the most times. The issue is never the idea. It&amp;rsquo;s the
 off-by-one.&lt;/p&gt;
 &lt;h2 id="the-canonical-bug"&gt;The canonical bug&lt;/h2&gt;
@@ -83,12 +84,12 @@ off-by-one.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; hi &lt;span style="color:#f92672"&gt;=&lt;/span&gt; mid
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;lo = mid&lt;/code&gt; without &lt;code&gt;+ 1&lt;/code&gt; stalls when &lt;code&gt;lo + 1 == hi&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Outer Wilds</title><link>https://rudnkh.me/playing/outer-wilds/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/playing/outer-wilds/</guid><description>&lt;p&gt;Finally played Outer Wilds. It lives up to the reputation — probably the
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;lo = mid&lt;/code&gt; without &lt;code&gt;+ 1&lt;/code&gt; stalls when &lt;code&gt;lo + 1 == hi&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Outer Wilds</title><link>http://localhost:1313/playing/outer-wilds/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/playing/outer-wilds/</guid><description>&lt;p&gt;Finally played Outer Wilds. It lives up to the reputation — probably the
 purest expression of curiosity-as-gameplay I&amp;rsquo;ve ever seen. No combat, no
 upgrades, no gear checks. Just you, a ship, and a solar system full of
 things that deserve to be understood.&lt;/p&gt;
 &lt;p&gt;Spoilers would genuinely hurt the experience, so I&amp;rsquo;ll just say: every
-&amp;ldquo;aha&amp;rdquo; moment lands, and the structure of the final act is audacious.&lt;/p&gt;</description></item><item><title>Git worktrees changed how I work</title><link>https://rudnkh.me/notes/git-worktrees/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/git-worktrees/</guid><description>&lt;p&gt;I avoided &lt;code&gt;git worktree&lt;/code&gt; for years because &amp;ldquo;stash and switch branches&amp;rdquo;
+&amp;ldquo;aha&amp;rdquo; moment lands, and the structure of the final act is audacious.&lt;/p&gt;</description></item><item><title>Git worktrees changed how I work</title><link>http://localhost:1313/notes/git-worktrees/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/notes/git-worktrees/</guid><description>&lt;p&gt;I avoided &lt;code&gt;git worktree&lt;/code&gt; for years because &amp;ldquo;stash and switch branches&amp;rdquo;
 felt fine. It wasn&amp;rsquo;t fine; I&amp;rsquo;d just never felt the alternative.&lt;/p&gt;
 &lt;p&gt;The pitch: instead of switching branches in place (which nukes your
 working directory and forces you to rebuild, re-run tests, restart the
@@ -114,7 +115,7 @@ bun&amp;rsquo;s global cache, or just biting the bullet.&lt;/li&gt;
 &lt;li&gt;Editors that track file paths (not content) sometimes get confused if
 you open the same file in two worktrees. Restart the editor; it&amp;rsquo;s fine.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Small workflow change. Big quality-of-life delta.&lt;/p&gt;</description></item><item><title>Local LLMs on Apple Silicon, one year in</title><link>https://rudnkh.me/notes/local-llms-apple-silicon/</link><pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/local-llms-apple-silicon/</guid><description>&lt;p&gt;I&amp;rsquo;ve been running language models locally on an M3 Pro for about a year.
+&lt;p&gt;Small workflow change. Big quality-of-life delta.&lt;/p&gt;</description></item><item><title>Local LLMs on Apple Silicon, one year in</title><link>http://localhost:1313/notes/local-llms-apple-silicon/</link><pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/notes/local-llms-apple-silicon/</guid><description>&lt;p&gt;I&amp;rsquo;ve been running language models locally on an M3 Pro for about a year.
 Not as a replacement for hosted models — the frontier is still far ahead —
 but as a daily driver for things that don&amp;rsquo;t need the frontier: code
 autocomplete, grep-over-my-notes, quick rewrites.&lt;/p&gt;
@@ -140,12 +141,12 @@ single-digit tokens/sec range.&lt;/li&gt;
 &lt;h2 id="what-surprised-me"&gt;What surprised me&lt;/h2&gt;
 &lt;p&gt;How much of my actual usage is &amp;ldquo;summarize this PDF&amp;rdquo; or &amp;ldquo;rephrase this
 email.&amp;rdquo; For those, a 12B model is genuinely fine. The upgrade from frontier
-to local is small; the privacy upgrade is huge.&lt;/p&gt;</description></item><item><title>Severance, Season 2</title><link>https://rudnkh.me/watching/severance-s2/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/watching/severance-s2/</guid><description>&lt;p&gt;The aesthetic is doing an incredible amount of work. Every frame is
+to local is small; the privacy upgrade is huge.&lt;/p&gt;</description></item><item><title>Severance, Season 2</title><link>http://localhost:1313/watching/severance-s2/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/watching/severance-s2/</guid><description>&lt;p&gt;The aesthetic is doing an incredible amount of work. Every frame is
 composed like a Wes Anderson cover of a Kafka short story. The plot moves
 slower than it thinks it does, but the atmosphere carries it.&lt;/p&gt;
 &lt;p&gt;The &amp;ldquo;innies vs outies&amp;rdquo; ethics keep finding new dimensions. I suspect the
 show is structurally incapable of landing a finale that matches the
-premise, but the ride is the point.&lt;/p&gt;</description></item><item><title>Valid Parentheses</title><link>https://rudnkh.me/writeups/valid-parentheses/</link><pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/valid-parentheses/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+premise, but the ride is the point.&lt;/p&gt;</description></item><item><title>Valid Parentheses</title><link>http://localhost:1313/writeups/valid-parentheses/</link><pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate><guid>http://localhost:1313/writeups/valid-parentheses/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Given a string of brackets &lt;code&gt;()[]{}&lt;/code&gt;, determine whether it is valid — every
 opening bracket has a matching closing bracket, and they are properly
 nested.&lt;/p&gt;
@@ -166,20 +167,20 @@ nested.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Space:&lt;/strong&gt; O(n) — worst case the stack is as long as the input.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="key-insights"&gt;Key Insights&lt;/h2&gt;
-&lt;p&gt;Two edge cases that trip people up:&lt;/p&gt;</description></item><item><title>Tunic</title><link>https://rudnkh.me/playing/tunic/</link><pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/playing/tunic/</guid><description>&lt;p&gt;A small fox with a sword, a cryptic in-game manual written in an invented
+&lt;p&gt;Two edge cases that trip people up:&lt;/p&gt;</description></item><item><title>Tunic</title><link>http://localhost:1313/playing/tunic/</link><pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/playing/tunic/</guid><description>&lt;p&gt;A small fox with a sword, a cryptic in-game manual written in an invented
 script, and a world that reveals a second, far deeper layer once you start
 translating the runes. The first 10 hours feel like Zelda homage; the next
 20 feel like the most clever ARG I&amp;rsquo;ve played in years.&lt;/p&gt;
 &lt;p&gt;Not for everyone — if &amp;ldquo;read the manual&amp;rdquo; isn&amp;rsquo;t your idea of gameplay, skip.
-For me, peak satisfaction.&lt;/p&gt;</description></item><item><title>Reading SICP, slowly</title><link>https://rudnkh.me/notes/reading-sicp/</link><pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/reading-sicp/</guid><description>&lt;p&gt;Started working through &lt;em&gt;Structure and Interpretation of Computer Programs&lt;/em&gt;
+For me, peak satisfaction.&lt;/p&gt;</description></item><item><title>Reading SICP, slowly</title><link>http://localhost:1313/notes/reading-sicp/</link><pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/notes/reading-sicp/</guid><description>&lt;p&gt;Started working through &lt;em&gt;Structure and Interpretation of Computer Programs&lt;/em&gt;
 over the weekend. I bounced off it twice before — once in 2015, once in
 2020. This time I&amp;rsquo;m giving myself permission to go slow. Maybe a chapter a
 month.&lt;/p&gt;
 &lt;p&gt;The first time I picked it up, I skimmed the prose and jumped to exercises.
 Felt like a waste because the exercises only land if you&amp;rsquo;ve sat with the
-worldview. This time: read the prose twice, do every exercise, don&amp;rsquo;t skip.&lt;/p&gt;</description></item><item><title>X-Files, 2x18 - Fearful Symmetry</title><link>https://rudnkh.me/watching/x-files-2x18/</link><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/watching/x-files-2x18/</guid><description>&lt;p&gt;Epic continuation of Denis Villeneuve&amp;rsquo;s adaptation. The scale, visuals, and sound design are absolutely stunning. Timothée Chalamet and Zendaya deliver powerful performances.&lt;/p&gt;
+worldview. This time: read the prose twice, do every exercise, don&amp;rsquo;t skip.&lt;/p&gt;</description></item><item><title>X-Files, 2x18 - Fearful Symmetry</title><link>http://localhost:1313/watching/x-files-2x18/</link><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/watching/x-files-2x18/</guid><description>&lt;p&gt;Epic continuation of Denis Villeneuve&amp;rsquo;s adaptation. The scale, visuals, and sound design are absolutely stunning. Timothée Chalamet and Zendaya deliver powerful performances.&lt;/p&gt;
 &lt;p&gt;The way Villeneuve translates Herbert&amp;rsquo;s complex narrative into pure cinema is masterful. Every frame is meticulously crafted. Hans Zimmer&amp;rsquo;s score elevates the entire experience.&lt;/p&gt;
-&lt;p&gt;Best watched in IMAX.&lt;/p&gt;</description></item><item><title>Two Sum</title><link>https://rudnkh.me/writeups/two-sum/</link><pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/two-sum/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Best watched in IMAX.&lt;/p&gt;</description></item><item><title>Two Sum</title><link>http://localhost:1313/writeups/two-sum/</link><pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/writeups/two-sum/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;target&lt;/code&gt;, return indices of the two numbers such that they add up to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;The brute force approach would be O(n²), but we can optimize it using a hash table to achieve O(n) time complexity.&lt;/p&gt;
@@ -197,8 +198,8 @@ worldview. This time: read the prose twice, do every exercise, don&amp;rsquo;t s
 &lt;li&gt;&lt;strong&gt;Space:&lt;/strong&gt; O(n) - hash table storage&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="key-insights"&gt;Key Insights&lt;/h2&gt;
-&lt;p&gt;Using a hash table allows us to look up complements in constant time, reducing the overall complexity from O(n²) to O(n).&lt;/p&gt;</description></item><item><title>Heretic</title><link>https://rudnkh.me/playing/heretic/</link><pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/playing/heretic/</guid><description>&lt;p&gt;I&amp;rsquo;ve always loved dark fantasy aesthetics, and Heretic remains one of the best representatives of the genre. Built on id Tech 1 (the Doom engine), it perfectly captures that gritty, supernatural atmosphere.&lt;/p&gt;
-&lt;p&gt;First played this back in the 90s on MS-DOS. Recently revisited it through the Steam release with enhanced graphics, improved music, and proper mouse support. Pure nostalgia.&lt;/p&gt;</description></item><item><title>On small tools</title><link>https://rudnkh.me/notes/on-small-tools/</link><pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/on-small-tools/</guid><description>&lt;p&gt;There&amp;rsquo;s a specific kind of joy in tools that do one thing, do it well, and
+&lt;p&gt;Using a hash table allows us to look up complements in constant time, reducing the overall complexity from O(n²) to O(n).&lt;/p&gt;</description></item><item><title>Heretic</title><link>http://localhost:1313/playing/heretic/</link><pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/playing/heretic/</guid><description>&lt;p&gt;I&amp;rsquo;ve always loved dark fantasy aesthetics, and Heretic remains one of the best representatives of the genre. Built on id Tech 1 (the Doom engine), it perfectly captures that gritty, supernatural atmosphere.&lt;/p&gt;
+&lt;p&gt;First played this back in the 90s on MS-DOS. Recently revisited it through the Steam release with enhanced graphics, improved music, and proper mouse support. Pure nostalgia.&lt;/p&gt;</description></item><item><title>On small tools</title><link>http://localhost:1313/notes/on-small-tools/</link><pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/notes/on-small-tools/</guid><description>&lt;p&gt;There&amp;rsquo;s a specific kind of joy in tools that do one thing, do it well, and
 stay out of your way. &lt;code&gt;fzf&lt;/code&gt; is the canonical example — a single fuzzy finder
 that quietly becomes the glue between everything else.&lt;/p&gt;
 &lt;h2 id="what-makes-a-good-small-tool"&gt;What makes a good small tool&lt;/h2&gt;
@@ -212,13 +213,13 @@ whole thing.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The inverse — the &amp;ldquo;platform&amp;rdquo; tool that tries to absorb five adjacent
 workflows — almost always rots. Either the maintainer burns out, or the
-feature surface becomes a museum of deprecated ideas.&lt;/p&gt;</description></item><item><title>Hello, world</title><link>https://rudnkh.me/notes/hello-world/</link><pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/hello-world/</guid><description>&lt;p&gt;First post on the rewritten version of this site. The old version was a
+feature surface becomes a museum of deprecated ideas.&lt;/p&gt;</description></item><item><title>Hello, world</title><link>http://localhost:1313/notes/hello-world/</link><pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate><guid>http://localhost:1313/notes/hello-world/</guid><description>&lt;p&gt;First post on the rewritten version of this site. The old version was a
 single-page thing — name, social icons, end of story. I got tired of not
 having anywhere to write things down, so here we are.&lt;/p&gt;
 &lt;p&gt;The plan: post whatever I feel like posting, in whatever form. Sometimes a
 technical writeup, sometimes a half-thought about a book, sometimes a list
 of links. No schedule, no &amp;ldquo;brand.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re reading this: welcome. Expect typos.&lt;/p&gt;</description></item><item><title>Links</title><link>https://rudnkh.me/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rudnkh.me/links/</guid><description>&lt;p&gt;A few corners of the internet I keep coming back to.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re reading this: welcome. Expect typos.&lt;/p&gt;</description></item><item><title>Links</title><link>http://localhost:1313/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/links/</guid><description>&lt;p&gt;A few corners of the internet I keep coming back to.&lt;/p&gt;
 &lt;h2 id="people"&gt;People&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://sive.rs"&gt;Derek Sivers&lt;/a&gt;&lt;/li&gt;
