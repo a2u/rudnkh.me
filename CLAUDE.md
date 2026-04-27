@@ -78,6 +78,7 @@ Dark-only — no `prefers-color-scheme: light` rules. If adding light mode, do i
 
 - **Temporarily hiding nav items**: use Hugo template comments `{{/* ... */}}` (not HTML `<!-- -->`) so the markup doesn't leak into the output. Current example: `layouts/index.html` hides `/notes` and `/pages` this way.
 - **Footer year**: `layouts/partials/footer.html` uses `{{ now.Year }}` — don't hardcode the year.
+- **Image illustrations**: visual style for AI-generated images (post headers, etc.) is documented in `IMAGE_STYLE.md` at the repo root. Reuse the prompt scaffold there for consistency.
 
 ## Git
 
