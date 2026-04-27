@@ -59,6 +59,9 @@ h3 {
   letter-spacing: 0.04em;
 }
 
+article h2::before { content: "## "; color: var(--green); font-weight: 400; }
+article h3::before { content: "### "; color: var(--green); font-weight: 400; }
+
 p { margin: 1em 0; }
 ul, ol { padding-left: 1.4em; }
 ul li, ol li { margin: 0.25em 0; }
@@ -164,6 +167,23 @@ ul.entries li a { color: var(--fg-strong); }
 ul.entries li a:hover { color: var(--green); }
 
 article .meta { font-size: 0.88em; margin: -0.3em 0 2em; color: var(--fg-muted); }
+article .meta .translations { margin-left: 1em; }
+article .meta .translations a {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0.05em 0.45em;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+}
+article .meta .translations a:hover {
+  color: var(--green);
+  border-color: rgba(0, 254, 139, 0.4);
+  text-decoration: none;
+}
 article .page-head {
   display: flex;
   justify-content: space-between;

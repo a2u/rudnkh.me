@@ -7,7 +7,16 @@
         </div>
       {{ else }}
         <h1>{{ .Title }}</h1>
-        {{ if not .Date.IsZero }}<p class="meta">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
+        {{ if or (not .Date.IsZero) .Params.translations }}
+        <p class="meta">
+          {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
+          {{ with .Params.translations }}
+            <span class="translations">also in
+              {{- range . }} <a href="{{ .url }}" hreflang="{{ .lang }}">{{ .lang }}</a>{{ end }}
+            </span>
+          {{ end }}
+        </p>
+        {{ end }}
       {{ end }}
       {{ .Content }}
     </article>

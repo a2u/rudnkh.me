@@ -10,3 +10,7 @@ title: "Backpacking"
 
 - ASICS Novablast 4 (2024–2025)
 - ASICS GT-2000 14 (2026)
+
+## Electronics
+
+- Power Bank Xiaomi 212W HyperCharge, 25000 mAh

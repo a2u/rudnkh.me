@@ -1,6 +1,14 @@
 ---
 title: "Birdsong as a safety signal"
 date: 2026-04-27
+layout: single
+translations:
+  - lang: ru
+    url: /notes/birdsong/ru/
+  - lang: pt
+    url: /notes/birdsong/pt/
+  - lang: de
+    url: /notes/birdsong/de/
 ---
 
 ![A pencil illustration of a songbird perched on a branch, with faint sound waves traveling toward a calm human silhouette in profile.](/images/notes/birdsong.jpg)

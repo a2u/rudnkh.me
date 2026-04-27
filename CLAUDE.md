@@ -53,6 +53,43 @@ Adding a new section **does not** require new layout files — `_default/*` hand
 - Title and badge are wrapped in a `<div class="page-head">` flexbox so the badge renders to the right of the `<h1>`. Regular single pages keep the old shape (`<h1>` + gray `<p class="meta">` date).
 - The `.updated` badge styling (green-tinted border, green-tinted date) is in `static/css/style.css`. If you refactor `single.html`, preserve this branch or the badge layout breaks.
 
+### Notes: translations are required
+
+**Every note in `content/notes/` must be translated into Russian (`ru`), European Portuguese (`pt`), and German (`de`)** before publishing. English is the default; translations are first-class.
+
+File layout per note (page bundle):
+
+```
+content/notes/<slug>/
+  _index.md     # English. MUST set `layout: single` so it renders as a post (not a list).
+  ru.md         # Russian translation
+  pt.md         # European Portuguese (PT-PT, not PT-BR)
+  de.md         # German
+```
+
+URLs (driven by Hugo defaults — `permalinks.notes` was removed from `config.yaml` precisely so this nesting works):
+
+- `/notes/<slug>/` — English
+- `/notes/<slug>/<lang>/` — each translation
+
+Each file's frontmatter carries a `translations:` array listing the **peers** (not itself):
+
+```yaml
+translations:
+  - lang: en
+    url: /notes/<slug>/
+  - lang: pt
+    url: /notes/<slug>/pt/
+  - lang: de
+    url: /notes/<slug>/de/
+```
+
+Convention: when not on the English version, list `en` first (it's the original); otherwise alphabetical or any sensible order. Pills render in `single.html` next to the date.
+
+**Translation quality:** translate by meaning, not word-for-word. Read the result aloud — if it sounds like a machine, rewrite. PT must be European Portuguese (the author lives in Portugal): `monitoriza`/`deteção`/`em direção a`, not the Brazilian `monitora`/`detecção`/`em direção à`. German uses the period as thousands separator (`1.200`) and a space before `%` (`14,1 %`); follow DIN 5008. Image `alt` text must also be translated. Title must be translated.
+
+Reference example: `content/notes/birdsong/` — use as the template when adding a new note.
+
 ## Body-class convention (CSS depends on this)
 
 `header.html` sets `<body class="...">` based on the page kind:

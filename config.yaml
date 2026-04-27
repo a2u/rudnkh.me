@@ -4,7 +4,6 @@ minify:
   minifyOutput: true
 publishDir: 'docs'
 permalinks:
-  notes: /notes/:contentbasename/
   playing: /playing/:contentbasename/
   writeups: /writeups/:contentbasename/
   watching: /watching/:contentbasename/
