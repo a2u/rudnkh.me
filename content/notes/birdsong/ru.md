@@ -1,6 +1,6 @@
 ---
 title: "Пение птиц как сигнал безопасности"
-date: 2026-04-27
+date: 2026-04-28
 translations:
   - lang: en
     url: /notes/birdsong/

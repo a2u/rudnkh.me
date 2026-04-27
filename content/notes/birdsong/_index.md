@@ -1,6 +1,6 @@
 ---
 title: "Birdsong as a safety signal"
-date: 2026-04-27
+date: 2026-04-28
 layout: single
 translations:
   - lang: ru

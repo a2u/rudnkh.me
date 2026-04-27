@@ -1,6 +1,6 @@
 ---
 title: "O canto dos pássaros como sinal de segurança"
-date: 2026-04-27
+date: 2026-04-28
 translations:
   - lang: en
     url: /notes/birdsong/
