@@ -11,7 +11,7 @@ translations:
     url: /notes/birdsong/de/
 ---
 
-![A pencil illustration of a songbird perched on a branch, with faint sound waves traveling toward a calm human silhouette in profile.](/images/notes/birdsong.jpg)
+![A pencil illustration of a songbird perched on a branch, with faint sound waves traveling toward a calm human silhouette in profile.](/images/notes/birdsong.png)
 
 Your brain has an ancient circuit that is constantly, and subconsciously,
 monitoring whether birds are singing. It's described as a predator-detection

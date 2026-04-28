@@ -10,7 +10,7 @@ translations:
     url: /notes/birdsong/pt/
 ---
 
-![Eine Bleistiftzeichnung eines Singvogels auf einem Ast, von dessen Schnabel feine Schallwellen zu einer ruhigen menschlichen Silhouette im Profil ziehen.](/images/notes/birdsong.jpg)
+![Eine Bleistiftzeichnung eines Singvogels auf einem Ast, von dessen Schnabel feine Schallwellen zu einer ruhigen menschlichen Silhouette im Profil ziehen.](/images/notes/birdsong.png)
 
 Ihr Gehirn besitzt einen uralten Schaltkreis, der ständig und
 unterbewusst überprüft, ob Vögel singen. Beschrieben wird er als ein

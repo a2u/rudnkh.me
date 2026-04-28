@@ -10,7 +10,7 @@ translations:
     url: /notes/birdsong/de/
 ---
 
-![Uma ilustração a lápis de um pássaro canoro pousado num ramo, com finas ondas sonoras a propagar-se em direção a uma silhueta humana serena em perfil.](/images/notes/birdsong.jpg)
+![Uma ilustração a lápis de um pássaro canoro pousado num ramo, com finas ondas sonoras a propagar-se em direção a uma silhueta humana serena em perfil.](/images/notes/birdsong.png)
 
 O seu cérebro tem um circuito antigo que monitoriza, de forma constante
 e subconsciente, se há pássaros a cantar. É descrito como um sistema

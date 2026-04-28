@@ -12,7 +12,7 @@
 {{- $class := "home" -}}
 {{- if not .IsHome -}}
   {{- $section := .Section -}}
-  {{- if .IsPage -}}
+  {{- if or .IsPage (eq .Layout "single") -}}
     {{- $class = printf "section %s %s-single" $section $section -}}
   {{- else -}}
     {{- $class = printf "section %s %s-list" $section $section -}}

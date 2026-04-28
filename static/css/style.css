@@ -62,6 +62,15 @@ h3 {
 article h2::before { content: "## "; color: var(--green); font-weight: 400; }
 article h3::before { content: "### "; color: var(--green); font-weight: 400; }
 
+/* Notes — looser typography for long-form prose */
+body.notes-single article { line-height: 1.75; }
+body.notes-single article p:not(.meta) { margin: 1.2em 0; text-indent: 1.6em; }
+body.notes-single article ul, body.notes-single article ol { padding-left: 1.6em; }
+body.notes-single article p img { display: block; margin: 0 auto; }
+body.notes-single article p:has(> img:only-child) { margin: 2em 0; text-indent: 0; }
+body.notes-single article hr { max-width: 5em; margin: 2.8em auto 0.6em 0; border-top-color: var(--fg-muted); opacity: 0.5; }
+body.notes-single article hr + p:not(.meta) { color: var(--fg-muted); font-size: 0.92em; text-indent: 0; margin-top: 0.4em; }
+
 p { margin: 1em 0; }
 ul, ol { padding-left: 1.4em; }
 ul li, ol li { margin: 0.25em 0; }
