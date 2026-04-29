@@ -105,10 +105,7 @@ Vogelgesangs signalisierte historisch eine drohende Gefahr.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Obsidian&lt;/strong&gt; for the daily brain-dump vault.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Marked 2&lt;/strong&gt; for previewing markdown.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Andor, Season 2</title><link>https://rudnkh.me/watching/andor-s2/</link><pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/watching/andor-s2/</guid><description>&lt;p&gt;The best thing Star Wars has done in decades. Tony Gilroy writing adult
-political drama with grown-up pacing and stakes. The prison arc in S1 was
-already a small miracle; S2 keeps the bar there for twelve episodes.&lt;/p&gt;
-&lt;p&gt;Watch even if you don&amp;rsquo;t care about Star Wars. Especially if you don&amp;rsquo;t.&lt;/p&gt;</description></item><item><title>Binary Search — and how I kept getting it wrong</title><link>https://rudnkh.me/writeups/binary-search/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/binary-search/</guid><description>&lt;p&gt;Binary search is the algorithm I&amp;rsquo;ve &amp;ldquo;known&amp;rdquo; the longest and written
+&lt;/ul&gt;</description></item><item><title>Binary Search — and how I kept getting it wrong</title><link>https://rudnkh.me/writeups/binary-search/</link><pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/binary-search/</guid><description>&lt;p&gt;Binary search is the algorithm I&amp;rsquo;ve &amp;ldquo;known&amp;rdquo; the longest and written
 incorrectly the most times. The issue is never the idea. It&amp;rsquo;s the
 off-by-one.&lt;/p&gt;
 &lt;h2 id="the-canonical-bug"&gt;The canonical bug&lt;/h2&gt;
@@ -129,12 +126,7 @@ purest expression of curiosity-as-gameplay I&amp;rsquo;ve ever seen. No combat, 
 upgrades, no gear checks. Just you, a ship, and a solar system full of
 things that deserve to be understood.&lt;/p&gt;
 &lt;p&gt;Spoilers would genuinely hurt the experience, so I&amp;rsquo;ll just say: every
-&amp;ldquo;aha&amp;rdquo; moment lands, and the structure of the final act is audacious.&lt;/p&gt;</description></item><item><title>Severance, Season 2</title><link>https://rudnkh.me/watching/severance-s2/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/watching/severance-s2/</guid><description>&lt;p&gt;The aesthetic is doing an incredible amount of work. Every frame is
-composed like a Wes Anderson cover of a Kafka short story. The plot moves
-slower than it thinks it does, but the atmosphere carries it.&lt;/p&gt;
-&lt;p&gt;The &amp;ldquo;innies vs outies&amp;rdquo; ethics keep finding new dimensions. I suspect the
-show is structurally incapable of landing a finale that matches the
-premise, but the ride is the point.&lt;/p&gt;</description></item><item><title>Valid Parentheses</title><link>https://rudnkh.me/writeups/valid-parentheses/</link><pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/valid-parentheses/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&amp;ldquo;aha&amp;rdquo; moment lands, and the structure of the final act is audacious.&lt;/p&gt;</description></item><item><title>Valid Parentheses</title><link>https://rudnkh.me/writeups/valid-parentheses/</link><pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/valid-parentheses/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Given a string of brackets &lt;code&gt;()[]{}&lt;/code&gt;, determine whether it is valid — every
 opening bracket has a matching closing bracket, and they are properly
 nested.&lt;/p&gt;
@@ -160,9 +152,7 @@ script, and a world that reveals a second, far deeper layer once you start
 translating the runes. The first 10 hours feel like Zelda homage; the next
 20 feel like the most clever ARG I&amp;rsquo;ve played in years.&lt;/p&gt;
 &lt;p&gt;Not for everyone — if &amp;ldquo;read the manual&amp;rdquo; isn&amp;rsquo;t your idea of gameplay, skip.
-For me, peak satisfaction.&lt;/p&gt;</description></item><item><title>X-Files, 2x18 - Fearful Symmetry</title><link>https://rudnkh.me/watching/x-files-2x18/</link><pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/watching/x-files-2x18/</guid><description>&lt;p&gt;Epic continuation of Denis Villeneuve&amp;rsquo;s adaptation. The scale, visuals, and sound design are absolutely stunning. Timothée Chalamet and Zendaya deliver powerful performances.&lt;/p&gt;
-&lt;p&gt;The way Villeneuve translates Herbert&amp;rsquo;s complex narrative into pure cinema is masterful. Every frame is meticulously crafted. Hans Zimmer&amp;rsquo;s score elevates the entire experience.&lt;/p&gt;
-&lt;p&gt;Best watched in IMAX.&lt;/p&gt;</description></item><item><title>Two Sum</title><link>https://rudnkh.me/writeups/two-sum/</link><pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/two-sum/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+For me, peak satisfaction.&lt;/p&gt;</description></item><item><title>Two Sum</title><link>https://rudnkh.me/writeups/two-sum/</link><pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/two-sum/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;target&lt;/code&gt;, return indices of the two numbers such that they add up to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;The brute force approach would be O(n²), but we can optimize it using a hash table to achieve O(n) time complexity.&lt;/p&gt;

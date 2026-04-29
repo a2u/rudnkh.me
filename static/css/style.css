@@ -175,6 +175,54 @@ ul.entries li time { color: var(--fg-muted); font-size: 0.88em; padding-top: 0.1
 ul.entries li a { color: var(--fg-strong); }
 ul.entries li a:hover { color: var(--green); }
 
+/* Watching list — calendar-strip headers */
+body.watching-list article h2,
+body.watching-list article h3 { display: flex; align-items: baseline; }
+body.watching-list article h2::before,
+body.watching-list article h3::before { display: none; }
+body.watching-list article h2 {
+  color: var(--green);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin: 2.4em 0 0;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--rule);
+}
+body.watching-list article h2:first-of-type { margin-top: 1em; }
+body.watching-list article h3 {
+  color: var(--fg-muted);
+  font-size: 0.72rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin: 1.4em 0 0.2em;
+}
+body.watching-list article ul.entries-watching { margin-top: 0.3em; margin-bottom: 0; }
+
+/* Watching list — day, kind badge, title */
+ul.entries-watching li {
+  grid-template-columns: 4.5em 5em 1fr;
+  gap: 0.8em;
+}
+ul.entries-watching li a {
+  text-wrap: balance;
+  line-height: 1.4;
+}
+ul.entries-watching li .kind {
+  align-self: center;
+  text-align: center;
+  padding: 0.05em 0.45em;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  font-size: 0.72em;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
 article .meta { font-size: 0.88em; margin: -0.3em 0 2em; color: var(--fg-muted); }
 article .meta .translations { margin-left: 1em; }
 article .meta .translations a {

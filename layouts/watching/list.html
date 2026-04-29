@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+      {{ range (where .Pages "Section" "watching").GroupByDate "2006" }}
+      <h2>{{ .Key }}</h2>
+        {{ range .Pages.GroupByDate "January" }}
+        <h3>{{ .Key }}</h3>
+        <ul class="entries entries-watching">
+          {{ range .Pages }}
+          {{ $media := .Params.media | default "movie" }}
+          {{ $genre := .Params.genre }}
+          {{ $label := $media }}
+          {{ if eq $genre "anime" }}
+            {{ if eq $media "episode" }}{{ $label = "anime ep" }}{{ else }}{{ $label = "anime" }}{{ end }}
+          {{ end }}
+          <li>
+            <time>{{ .Date.Format "2 Jan" }}</time>
+            <span class="kind kind-{{ $media }}{{ with $genre }} kind-{{ . }}{{ end }}">{{ $label }}</span>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      {{ end }}
+    </article>
+{{ partial "footer.html" . }}

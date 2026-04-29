@@ -1,7 +1,7 @@
 ---
 title: "Severance, Season 2"
 date: 2026-01-08
-type: watching
+media: season
 year: 2025
 ---
 

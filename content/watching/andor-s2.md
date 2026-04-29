@@ -1,7 +1,7 @@
 ---
 title: "Andor, Season 2"
 date: 2026-03-11
-type: watching
+media: season
 year: 2025
 ---
 
