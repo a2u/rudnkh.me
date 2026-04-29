@@ -213,4 +213,10 @@ For me, peak satisfaction.&lt;/p&gt;</description></item><item><title>X-Files, 2
 &lt;li&gt;&lt;a href="https://nownownow.com"&gt;nownownow.com&lt;/a&gt; — people who keep /now pages.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://indieweb.org"&gt;indieweb.org&lt;/a&gt; — the small-web movement.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://neal.fun"&gt;neal.fun&lt;/a&gt; — little toys worth your time.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Projects</title><link>https://rudnkh.me/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rudnkh.me/projects/</guid><description>&lt;p&gt;Things I&amp;rsquo;ve built.&lt;/p&gt;
+&lt;h2 id="2026"&gt;2026&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/a2u/sharemd"&gt;sharemd&lt;/a&gt;&lt;/strong&gt; — lightweight markdown
+sharing service. Upload &lt;code&gt;.md&lt;/code&gt; via API or CLI, get a clean rendered URL.
+Self-hosted, no database. Live at &lt;a href="https://share.nuit.sh"&gt;share.nuit.sh&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
