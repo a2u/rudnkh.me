@@ -2,6 +2,13 @@
 title: "Proof of Human"
 date: 2026-05-02
 layout: single
+translations:
+  - lang: ru
+    url: /notes/proof-of-human/ru/
+  - lang: pt
+    url: /notes/proof-of-human/pt/
+  - lang: de
+    url: /notes/proof-of-human/de/
 ---
 
 ![A pencil illustration of a single human eye in close-up, the iris rendered in meticulous detail with fine concentric ring patterns and faint radial wavelet lines, drawn in the style of an anatomical naturalist sketch.](/images/notes/proof-of-human.png)
@@ -50,7 +57,8 @@ per person that proves *that* you're a unique human without revealing
 know which project I'm talking about.
 
 The cost of producing a convincing human dropped to zero, and the
-rest of the internet quietly bends around that one fact. Whether being human needs to be proved is no longer the
-question — that part is already happening. What's left are the
-political questions: who gets to issue the proof, who gets to accept
-it, and what it costs the people who carry one.
+rest of the internet quietly bends around that one fact. Whether being
+human needs to be proved is no longer the question — that part is
+already happening. What's left are the political questions: who gets
+to issue the proof, who gets to accept it, and what it costs the
+people who carry one.
