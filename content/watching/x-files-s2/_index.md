@@ -5,6 +5,5 @@ media: series
 season: 2
 year: 1994
 ongoing: true
+imdb: https://www.imdb.com/title/tt0106179/
 ---
-
-Picking through Season 2 in no particular order. Notes per episode below.

@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ if or (not .Date.IsZero) .Params.imdb }}
+      <p class="meta">
+        {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
+        {{ with .Params.imdb }} · <a href="{{ . }}" rel="noopener" class="ext">imdb ↗</a>{{ end }}
+      </p>
+      {{ end }}
+      {{ with .Params.photos }}
+      <div class="gallery">
+        {{ range . }}
+        <a href="/images/{{ . }}" class="thumb">
+          <img src="/images/{{ . }}" alt="" loading="lazy">
+        </a>
+        {{ end }}
+      </div>
+      <dialog id="lightbox" class="lightbox">
+        <button class="close" aria-label="Close">×</button>
+        <button class="prev" aria-label="Previous">‹</button>
+        <img alt="">
+        <button class="next" aria-label="Next">›</button>
+        <p class="counter"></p>
+      </dialog>
+      <script src="/js/lightbox.js" defer></script>
+      {{ end }}
+      {{ .Content }}
+    </article>
+{{ partial "footer.html" . }}

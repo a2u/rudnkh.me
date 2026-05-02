@@ -9,4 +9,5 @@ topics, loosely organized as follows:
 - [Now](/now/)
 - [Projects](/projects/)
 - [Playing](/playing/)
+- [Watching](/watching/)
 - [Backpacking](/backpacking/)

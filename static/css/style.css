@@ -181,27 +181,30 @@ ul.entries li .year {
   font-size: 0.88em;
   margin-left: 0.4em;
 }
+ul.entries li .title .kind,
 ul.entries li .season {
   display: inline-block;
   margin-left: 0.4em;
-  padding: 0 0.35em;
+  padding: 0.1em 0.5em;
   border: 1px solid var(--rule);
   border-radius: 3px;
   color: var(--fg-muted);
-  font-size: 0.78em;
-  letter-spacing: 0.04em;
-  vertical-align: 0.08em;
+  font-size: 0.72em;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  vertical-align: 0.15em;
+  white-space: nowrap;
 }
+ul.entries li .title .kind { text-transform: uppercase; }
 article h1 .season {
   display: inline-block;
-  margin-left: 0.4em;
+  margin-left: 0.5em;
   padding: 0 0.4em;
-  border: 1px solid var(--rule);
+  border: 1px solid rgba(0, 254, 139, 0.35);
   border-radius: 4px;
-  color: var(--fg-muted);
-  font-size: 0.55em;
-  letter-spacing: 0.04em;
-  vertical-align: 0.45em;
+  color: var(--green);
+  font-size: 1em;
+  letter-spacing: 0.02em;
   font-weight: 400;
 }
 
@@ -238,28 +241,16 @@ body.playing-list article h3 {
 body.watching-list article ul.entries-watching,
 body.playing-list article ul.entries-playing { margin-top: 0.3em; margin-bottom: 0; }
 
-/* Watching list — day, kind badge, title */
+/* Watching list — day, title (kind badge inline after title) */
 ul.entries-watching li {
-  grid-template-columns: 4.5em 5em 1fr;
+  grid-template-columns: 4.5em 1fr;
   gap: 0.8em;
-}
-ul.entries-watching li .kind {
-  align-self: center;
-  text-align: center;
-  padding: 0.05em 0.45em;
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  color: var(--fg-muted);
-  text-transform: uppercase;
-  font-size: 0.72em;
-  letter-spacing: 0.06em;
-  line-height: 1.6;
-  white-space: nowrap;
+  align-items: baseline;
 }
 
-/* Playing single — external links */
-body.playing-single article .meta a.ext { color: var(--fg-muted); }
-body.playing-single article .meta a.ext:hover { color: var(--green); }
+/* External links in meta (playing, watching) */
+article .meta a.ext { color: var(--fg-muted); }
+article .meta a.ext:hover { color: var(--green); }
 
 /* Gallery — thumbnail grid */
 article .gallery {
@@ -358,24 +349,11 @@ ul.entries-episodes li {
   align-items: baseline;
 }
 
-/* Watching list — currently-watching block (no date) */
+/* Watching list — currently-watching block (no date, no time column) */
 ul.entries-ongoing li {
-  grid-template-columns: 5em 1fr;
+  grid-template-columns: 1fr;
   gap: 0.8em;
   align-items: baseline;
-}
-ul.entries-ongoing li .kind {
-  align-self: center;
-  text-align: center;
-  padding: 0.05em 0.45em;
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  color: var(--fg-muted);
-  text-transform: uppercase;
-  font-size: 0.72em;
-  letter-spacing: 0.06em;
-  line-height: 1.6;
-  white-space: nowrap;
 }
 
 article .meta { font-size: 0.88em; margin: -0.3em 0 2em; color: var(--fg-muted); }

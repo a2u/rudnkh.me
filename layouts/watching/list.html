@@ -16,9 +16,9 @@
         {{ $genre := .Params.genre }}
         {{ $label := cond (eq $genre "anime") "anime" $media }}
         <li>
-          <span class="kind kind-{{ $media }}{{ with $genre }} kind-{{ . }}{{ end }}">{{ $label }}</span>
           <span class="title">
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="kind kind-{{ $media }}{{ with $genre }} kind-{{ . }}{{ end }}">{{ $label }}</span>
             {{ with .Params.season }}<span class="season">Season {{ . }}</span>{{ end }}
             {{ with .Params.year }}<span class="year">({{ . }})</span>{{ end }}
           </span>
@@ -38,9 +38,9 @@
           {{ $label := cond (eq $genre "anime") "anime" $media }}
           <li>
             <time>{{ .Date.Format "2 Jan" }}</time>
-            <span class="kind kind-{{ $media }}{{ with $genre }} kind-{{ . }}{{ end }}">{{ $label }}</span>
             <span class="title">
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <span class="kind kind-{{ $media }}{{ with $genre }} kind-{{ . }}{{ end }}">{{ $label }}</span>
               {{ with .Params.season }}<span class="season">Season {{ . }}</span>{{ end }}
               {{ with .Params.year }}<span class="year">({{ . }})</span>{{ end }}
             </span>
@@ -55,6 +55,7 @@
       <p class="meta">
         {{ if .Params.ongoing }}currently watching{{ else if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
         {{ with .Params.year }} · released {{ . }}{{ end }}
+        {{ with .Params.imdb }} · <a href="{{ . }}" rel="noopener" class="ext">imdb ↗</a>{{ end }}
       </p>
       {{ .Content }}
       {{ with .Pages }}
