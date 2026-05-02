@@ -39,6 +39,30 @@ posts, /now, /pages, etc.). Pass these to whichever model you're using
 - Remember: Hugo wipes `docs/` on `hugo --cleanDestinationDir`. Always
   store originals under `static/images/`, not directly in `docs/`.
 
+## Resizing originals before commit
+
+Models like Gemini Nano Banana / Imagen typically return ~7–9 MB images
+at 2.5–3K resolution. Don't commit those — the site is served from a
+GitHub Pages `docs/` directory and large binaries inflate every clone.
+Target ~1–1.5 MB at 1200 px on the long edge, which is plenty for the
+680 px content column at retina density.
+
+Standard procedure (macOS, `sips` is built-in):
+
+```bash
+# Drop the original into the right folder first.
+# Then resize in place to 1200 px max dimension:
+sips -Z 1200 static/images/notes/<slug>.png
+
+# Verify it landed in the 1–1.5 MB range:
+ls -lh static/images/notes/<slug>.png
+```
+
+`sips -Z N` preserves aspect ratio and only shrinks (never enlarges).
+**Keep the format the user delivered** — if they handed you a PNG, do
+not silently re-encode to JPG. PNG vs JPG choice belongs to whoever
+generated the image; resizing should be format-preserving.
+
 ## Composition guidelines
 
 - One clear subject; supporting elements should breathe in negative space.
