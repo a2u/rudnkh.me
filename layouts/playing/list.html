@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+      {{ range (where .Pages "Section" "playing").GroupByDate "2006" }}
+      <h2>{{ .Key }}</h2>
+        {{ range .Pages.GroupByDate "January" }}
+        <h3>{{ .Key }}</h3>
+        <ul class="entries entries-playing">
+          {{ range .Pages }}
+          <li>
+            <time>{{ .Date.Format "2 Jan" }}</time>
+            <span class="title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.year }}<span class="year">({{ . }})</span>{{ end }}
+            </span>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      {{ end }}
+    </article>
+{{ partial "footer.html" . }}

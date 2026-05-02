@@ -8,4 +8,5 @@ topics, loosely organized as follows:
 - [Notes](/notes/)
 - [Now](/now/)
 - [Projects](/projects/)
+- [Playing](/playing/)
 - [Backpacking](/backpacking/)

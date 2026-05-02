@@ -1,7 +1,8 @@
 ---
-title: "Andor, Season 2"
+title: "Andor"
 date: 2026-03-11
-media: season
+media: series
+season: 2
 year: 2025
 ---
 

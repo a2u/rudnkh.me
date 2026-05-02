@@ -1,8 +1,33 @@
 {{ partial "header.html" . }}
     <article>
+      {{ if .Parent.IsHome }}
+      {{/* root /watching/ — split into ongoing + completed (year/month-grouped) */}}
       <h1>{{ .Title }}</h1>
       {{ .Content }}
-      {{ range (where .Pages "Section" "watching").GroupByDate "2006" }}
+      {{ $all := .Pages }}
+      {{ $ongoing := where $all "Params.ongoing" true }}
+      {{ $done := complement $ongoing $all }}
+
+      {{ with $ongoing }}
+      <h2>Currently watching</h2>
+      <ul class="entries entries-ongoing">
+        {{ range . }}
+        {{ $media := .Params.media | default "movie" }}
+        {{ $genre := .Params.genre }}
+        {{ $label := cond (eq $genre "anime") "anime" $media }}
+        <li>
+          <span class="kind kind-{{ $media }}{{ with $genre }} kind-{{ . }}{{ end }}">{{ $label }}</span>
+          <span class="title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ with .Params.season }}<span class="season">Season {{ . }}</span>{{ end }}
+            {{ with .Params.year }}<span class="year">({{ . }})</span>{{ end }}
+          </span>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
+      {{ range $done.GroupByDate "2006" }}
       <h2>{{ .Key }}</h2>
         {{ range .Pages.GroupByDate "January" }}
         <h3>{{ .Key }}</h3>
@@ -10,18 +35,39 @@
           {{ range .Pages }}
           {{ $media := .Params.media | default "movie" }}
           {{ $genre := .Params.genre }}
-          {{ $label := $media }}
-          {{ if eq $genre "anime" }}
-            {{ if eq $media "episode" }}{{ $label = "anime ep" }}{{ else }}{{ $label = "anime" }}{{ end }}
-          {{ end }}
+          {{ $label := cond (eq $genre "anime") "anime" $media }}
           <li>
             <time>{{ .Date.Format "2 Jan" }}</time>
             <span class="kind kind-{{ $media }}{{ with $genre }} kind-{{ . }}{{ end }}">{{ $label }}</span>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.season }}<span class="season">Season {{ . }}</span>{{ end }}
+              {{ with .Params.year }}<span class="year">({{ . }})</span>{{ end }}
+            </span>
           </li>
           {{ end }}
         </ul>
         {{ end }}
+      {{ end }}
+      {{ else }}
+      {{/* season subsection — header + content + episode list */}}
+      <h1>{{ .Title }}{{ with .Params.season }} <span class="season">Season {{ . }}</span>{{ end }}</h1>
+      <p class="meta">
+        {{ if .Params.ongoing }}currently watching{{ else if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
+        {{ with .Params.year }} · released {{ . }}{{ end }}
+      </p>
+      {{ .Content }}
+      {{ with .Pages }}
+      <h2>Episodes</h2>
+      <ul class="entries entries-episodes">
+        {{ range .ByDate }}
+        <li>
+          <time>{{ .Date.Format "2 Jan 2006" }}</time>
+          <span class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
       {{ end }}
     </article>
 {{ partial "footer.html" . }}

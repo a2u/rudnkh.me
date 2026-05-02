@@ -6,7 +6,15 @@ voll mit automatisch erzeugten Videos, in denen automatisch erzeugte
 Stimmen automatisch erzeugte Fakten vortragen. Rezensionen, Threads,
 Profilbilder, Kommentarspalten — schneller produziert, als es jede
 denkbare Zahl von Menschen je könnte, und das meiste auf den ersten
-Blick nicht vom Echten zu unterscheiden.&lt;/p&gt;</description></item><item><title>Prova de Humano</title><link>https://rudnkh.me/notes/proof-of-human/pt/</link><pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/proof-of-human/pt/</guid><description>&lt;p&gt;&lt;img src="https://rudnkh.me/images/notes/proof-of-human.png" alt="Ilustração a lápis de um olho humano em grande plano, com a íris desenhada em pormenor minucioso — finos anéis concêntricos e ténues linhas radiais em forma de onda, no estilo de um esboço anatómico naturalista."&gt;&lt;/p&gt;
+Blick nicht vom Echten zu unterscheiden.&lt;/p&gt;</description></item><item><title>Heroes of Might and Magic: Olden Era</title><link>https://rudnkh.me/playing/homm-olden-era/</link><pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/playing/homm-olden-era/</guid><description>&lt;p&gt;I wouldn&amp;rsquo;t call myself a Heroes of Might and Magic fan. But as
+someone who enjoys turn-based strategy and isometric games, I
+couldn&amp;rsquo;t pass on this release. Played through it in early access
+(only Act 1 of the campaign was available at the time).&lt;/p&gt;
+&lt;p&gt;The story campaign is short — I finished it in a single day. The
+plot is mostly there to have one; nothing memorable. And
+mechanically, I didn&amp;rsquo;t see anything substantively new compared to
+earlier entries in the series — honestly, it feels more like a
+remaster than a new game.&lt;/p&gt;</description></item><item><title>Prova de Humano</title><link>https://rudnkh.me/notes/proof-of-human/pt/</link><pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/proof-of-human/pt/</guid><description>&lt;p&gt;&lt;img src="https://rudnkh.me/images/notes/proof-of-human.png" alt="Ilustração a lápis de um olho humano em grande plano, com a íris desenhada em pormenor minucioso — finos anéis concêntricos e ténues linhas radiais em forma de onda, no estilo de um esboço anatómico naturalista."&gt;&lt;/p&gt;
 &lt;p&gt;No último ano vi a internet encher-se de AI slop. O Instagram está
 tomado por modelos de moda sintéticos a posar em apartamentos
 verosímeis. O YouTube está cheio de vídeos gerados automaticamente,
@@ -145,12 +153,7 @@ off-by-one.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; hi &lt;span style="color:#f92672"&gt;=&lt;/span&gt; mid
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; &lt;span style="color:#f92672"&gt;-&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;lo = mid&lt;/code&gt; without &lt;code&gt;+ 1&lt;/code&gt; stalls when &lt;code&gt;lo + 1 == hi&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Outer Wilds</title><link>https://rudnkh.me/playing/outer-wilds/</link><pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/playing/outer-wilds/</guid><description>&lt;p&gt;Finally played Outer Wilds. It lives up to the reputation — probably the
-purest expression of curiosity-as-gameplay I&amp;rsquo;ve ever seen. No combat, no
-upgrades, no gear checks. Just you, a ship, and a solar system full of
-things that deserve to be understood.&lt;/p&gt;
-&lt;p&gt;Spoilers would genuinely hurt the experience, so I&amp;rsquo;ll just say: every
-&amp;ldquo;aha&amp;rdquo; moment lands, and the structure of the final act is audacious.&lt;/p&gt;</description></item><item><title>Valid Parentheses</title><link>https://rudnkh.me/writeups/valid-parentheses/</link><pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/valid-parentheses/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;lo = mid&lt;/code&gt; without &lt;code&gt;+ 1&lt;/code&gt; stalls when &lt;code&gt;lo + 1 == hi&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Valid Parentheses</title><link>https://rudnkh.me/writeups/valid-parentheses/</link><pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/valid-parentheses/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Given a string of brackets &lt;code&gt;()[]{}&lt;/code&gt;, determine whether it is valid — every
 opening bracket has a matching closing bracket, and they are properly
 nested.&lt;/p&gt;
@@ -171,12 +174,7 @@ nested.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Space:&lt;/strong&gt; O(n) — worst case the stack is as long as the input.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="key-insights"&gt;Key Insights&lt;/h2&gt;
-&lt;p&gt;Two edge cases that trip people up:&lt;/p&gt;</description></item><item><title>Tunic</title><link>https://rudnkh.me/playing/tunic/</link><pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/playing/tunic/</guid><description>&lt;p&gt;A small fox with a sword, a cryptic in-game manual written in an invented
-script, and a world that reveals a second, far deeper layer once you start
-translating the runes. The first 10 hours feel like Zelda homage; the next
-20 feel like the most clever ARG I&amp;rsquo;ve played in years.&lt;/p&gt;
-&lt;p&gt;Not for everyone — if &amp;ldquo;read the manual&amp;rdquo; isn&amp;rsquo;t your idea of gameplay, skip.
-For me, peak satisfaction.&lt;/p&gt;</description></item><item><title>Two Sum</title><link>https://rudnkh.me/writeups/two-sum/</link><pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/two-sum/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
+&lt;p&gt;Two edge cases that trip people up:&lt;/p&gt;</description></item><item><title>Two Sum</title><link>https://rudnkh.me/writeups/two-sum/</link><pubDate>Sat, 22 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/writeups/two-sum/</guid><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;target&lt;/code&gt;, return indices of the two numbers such that they add up to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
 &lt;p&gt;The brute force approach would be O(n²), but we can optimize it using a hash table to achieve O(n) time complexity.&lt;/p&gt;
@@ -194,8 +192,7 @@ For me, peak satisfaction.&lt;/p&gt;</description></item><item><title>Two Sum</t
 &lt;li&gt;&lt;strong&gt;Space:&lt;/strong&gt; O(n) - hash table storage&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="key-insights"&gt;Key Insights&lt;/h2&gt;
-&lt;p&gt;Using a hash table allows us to look up complements in constant time, reducing the overall complexity from O(n²) to O(n).&lt;/p&gt;</description></item><item><title>Heretic</title><link>https://rudnkh.me/playing/heretic/</link><pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate><guid>https://rudnkh.me/playing/heretic/</guid><description>&lt;p&gt;I&amp;rsquo;ve always loved dark fantasy aesthetics, and Heretic remains one of the best representatives of the genre. Built on id Tech 1 (the Doom engine), it perfectly captures that gritty, supernatural atmosphere.&lt;/p&gt;
-&lt;p&gt;First played this back in the 90s on MS-DOS. Recently revisited it through the Steam release with enhanced graphics, improved music, and proper mouse support. Pure nostalgia.&lt;/p&gt;</description></item><item><title>Backpacking</title><link>https://rudnkh.me/backpacking/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rudnkh.me/backpacking/</guid><description>&lt;h2 id="hiking-shoes"&gt;Hiking Shoes&lt;/h2&gt;
+&lt;p&gt;Using a hash table allows us to look up complements in constant time, reducing the overall complexity from O(n²) to O(n).&lt;/p&gt;</description></item><item><title>Backpacking</title><link>https://rudnkh.me/backpacking/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rudnkh.me/backpacking/</guid><description>&lt;h2 id="hiking-shoes"&gt;Hiking Shoes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Salomon X Ultra 4 Mid (2026)&lt;/li&gt;
 &lt;/ul&gt;

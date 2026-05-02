@@ -1,7 +1,8 @@
 ---
-title: "Severance, Season 2"
+title: "Severance"
 date: 2026-01-08
-media: season
+media: series
+season: 2
 year: 2025
 ---
 

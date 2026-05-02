@@ -174,13 +174,48 @@ ul.entries li:last-child { border-bottom: 0; }
 ul.entries li time { color: var(--fg-muted); font-size: 0.88em; padding-top: 0.1em; }
 ul.entries li a { color: var(--fg-strong); }
 ul.entries li a:hover { color: var(--green); }
+ul.entries li .title { line-height: 1.4; }
+ul.entries li .title a { text-wrap: balance; }
+ul.entries li .year {
+  color: var(--fg-muted);
+  font-size: 0.88em;
+  margin-left: 0.4em;
+}
+ul.entries li .season {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0 0.35em;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--fg-muted);
+  font-size: 0.78em;
+  letter-spacing: 0.04em;
+  vertical-align: 0.08em;
+}
+article h1 .season {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0 0.4em;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  color: var(--fg-muted);
+  font-size: 0.55em;
+  letter-spacing: 0.04em;
+  vertical-align: 0.45em;
+  font-weight: 400;
+}
 
-/* Watching list — calendar-strip headers */
+/* Watching + Playing lists — calendar-strip headers */
 body.watching-list article h2,
-body.watching-list article h3 { display: flex; align-items: baseline; }
+body.watching-list article h3,
+body.playing-list article h2,
+body.playing-list article h3 { display: flex; align-items: baseline; }
 body.watching-list article h2::before,
-body.watching-list article h3::before { display: none; }
-body.watching-list article h2 {
+body.watching-list article h3::before,
+body.playing-list article h2::before,
+body.playing-list article h3::before { display: none; }
+body.watching-list article h2,
+body.playing-list article h2 {
   color: var(--green);
   font-size: 0.95rem;
   font-weight: 500;
@@ -189,8 +224,10 @@ body.watching-list article h2 {
   padding-bottom: 0.3em;
   border-bottom: 1px solid var(--rule);
 }
-body.watching-list article h2:first-of-type { margin-top: 1em; }
-body.watching-list article h3 {
+body.watching-list article h2:first-of-type,
+body.playing-list article h2:first-of-type { margin-top: 1em; }
+body.watching-list article h3,
+body.playing-list article h3 {
   color: var(--fg-muted);
   font-size: 0.72rem;
   font-weight: 400;
@@ -198,18 +235,136 @@ body.watching-list article h3 {
   letter-spacing: 0.16em;
   margin: 1.4em 0 0.2em;
 }
-body.watching-list article ul.entries-watching { margin-top: 0.3em; margin-bottom: 0; }
+body.watching-list article ul.entries-watching,
+body.playing-list article ul.entries-playing { margin-top: 0.3em; margin-bottom: 0; }
 
 /* Watching list — day, kind badge, title */
 ul.entries-watching li {
   grid-template-columns: 4.5em 5em 1fr;
   gap: 0.8em;
 }
-ul.entries-watching li a {
-  text-wrap: balance;
-  line-height: 1.4;
-}
 ul.entries-watching li .kind {
+  align-self: center;
+  text-align: center;
+  padding: 0.05em 0.45em;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  font-size: 0.72em;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+/* Playing single — external links */
+body.playing-single article .meta a.ext { color: var(--fg-muted); }
+body.playing-single article .meta a.ext:hover { color: var(--green); }
+
+/* Gallery — thumbnail grid */
+article .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5em;
+  margin: 2em 0;
+}
+article .gallery a.thumb {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  cursor: zoom-in;
+  background: rgba(255, 255, 255, 0.02);
+}
+article .gallery a.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+article .gallery a.thumb:hover img {
+  transform: scale(1.04);
+  opacity: 0.92;
+}
+
+/* Lightbox dialog */
+dialog.lightbox {
+  border: none;
+  background: rgba(15, 16, 23, 0.96);
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  color: var(--fg);
+}
+dialog.lightbox::backdrop { background: rgba(0, 0, 0, 0.85); }
+dialog.lightbox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 92vw;
+  max-height: 86vh;
+  display: block;
+}
+dialog.lightbox button {
+  position: absolute;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  z-index: 10;
+}
+dialog.lightbox button:hover {
+  color: var(--green);
+  border-color: rgba(0, 254, 139, 0.4);
+}
+dialog.lightbox .close { top: 1rem; right: 1rem; }
+dialog.lightbox .prev { left: 1rem; top: 50%; transform: translateY(-50%); }
+dialog.lightbox .next { right: 1rem; top: 50%; transform: translateY(-50%); }
+dialog.lightbox .counter {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--fg-muted);
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+/* Playing list — day, title (with release year) */
+ul.entries-playing li {
+  grid-template-columns: 4.5em 1fr;
+  gap: 0.8em;
+  align-items: baseline;
+}
+
+/* Watching season page — episode list (full date includes year) */
+ul.entries-episodes li {
+  grid-template-columns: 6em 1fr;
+  gap: 0.8em;
+  align-items: baseline;
+}
+
+/* Watching list — currently-watching block (no date) */
+ul.entries-ongoing li {
+  grid-template-columns: 5em 1fr;
+  gap: 0.8em;
+  align-items: baseline;
+}
+ul.entries-ongoing li .kind {
   align-self: center;
   text-align: center;
   padding: 0.05em 0.45em;
