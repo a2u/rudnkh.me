@@ -61,7 +61,7 @@
       {{ with .Pages }}
       <h2>Episodes</h2>
       <ul class="entries entries-episodes">
-        {{ range .ByDate }}
+        {{ range .ByDate.Reverse }}
         <li>
           <time>{{ .Date.Format "2 Jan 2006" }}</time>
           <span class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
