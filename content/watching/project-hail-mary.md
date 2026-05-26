@@ -17,3 +17,6 @@ campaign — every other outlet covered it, pitched as a faithful book
 adaptation, the best sci-fi in years, and so on. In reality it's a
 simple story that would have made a great 30-minute short. Instead
 I sat through two-plus hours of it. That's all I've got.
+
+P.S. I genuinely don't understand why this film has such a high
+rating.
