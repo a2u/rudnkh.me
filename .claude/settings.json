@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(content/notes/ai-cant-read-this-note/**)",
+      "Edit(content/notes/ai-cant-read-this-note/**)",
+      "Bash(cat content/notes/ai-cant-read-this-note/*)"
+    ]
+  }
+}
