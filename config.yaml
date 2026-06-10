@@ -10,5 +10,9 @@ sitemap:
   changefreq: daily
   filename: sitemap.xml
   priority: 0.5
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 params:
   cdn: '/images/'

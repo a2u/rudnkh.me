@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title | default "rudnkh.me" }}{{ else }}{{ .Title }} — {{ .Site.Title | default "rudnkh.me" }}{{ end }}</title>
   <meta name="description" content="{{ .Description | default "vitalii rudnykh — personal site" }}">
+  {{ if .Params.noindex }}<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noai, noimageai">{{ end }}
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head>
