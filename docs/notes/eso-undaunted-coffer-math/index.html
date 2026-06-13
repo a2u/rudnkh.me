@@ -1,0 +1,80 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>ESO Undaunted Coffer Math — Vitalii Rudnykh</title><meta name=description content="vitalii rudnykh — personal site"><link rel="shortcut icon" href=/favicon.ico><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css integrity=sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+ crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js integrity=sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js integrity=sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})'></script></head><body class="section notes notes-single"><div class=container><div class=topbar><a class=brand href=/>rudnkh.me</a><span class=sep>/</span><a class=crumb href=/notes/>notes</a><span class=sep>/</span><a class=crumb href=/notes/eso-undaunted-coffer-math/>eso-undaunted-coffer-math</a></div><article><h1>ESO Undaunted Coffer Math</h1><p class=meta><time datetime=2026-06-13>13 June 2026</time></p><p><img src=/images/notes/eso-undaunted-coffer-math.png alt="A pencil illustration of eight small coffers lined up beneath one larger ornate coffer, drawn like specimens on a naturalist&rsquo;s plate."></p><style>body.notes-single article hr.tldr-sep{max-width:100%;margin:2em 0;opacity:.3}body.notes-single article hr.tldr-sep+p{color:var(--fg);font-size:1em;text-indent:1.6em;margin-top:0}</style><p><strong>TL;DR.</strong> I&rsquo;m writing this on a weekend, mostly for fun — to play
+with the probability math. You probably don&rsquo;t need any of it. If
+you play ESO and just want the answer for your own collection, the
+<a href=/tools/eso-coffer-calculator/>ESO coffer calculator</a> does the
+work for you.</p><hr class=tldr-sep><p>I love RPGs, especially the ones with real math behind the
+mechanics. This post is about a small probability problem that came
+up in <em>The Elder Scrolls Online</em> (ESO).</p><p>Quick context. ESO has a faction called the Undaunted with three
+vendors known as <strong>Pledge Masters</strong>: Glirion the Redbeard, Maj
+al-Ragath, and Urgarlag Chief-bane. You earn <strong>keys</strong> by completing
+daily dungeon quests and spend those keys at the Pledge Masters on
+loot boxes (&ldquo;coffers&rdquo;) that drop shoulder armor pieces. Different
+vendors sell different sets.</p><p>Each Pledge Master offers two kinds of coffer:</p><ul><li><strong>Mystery coffer</strong> — costs 1 key, rolls one random shoulder from
+any of the vendor&rsquo;s sets.</li><li><strong>Curated coffer</strong> — costs 8 keys, rolls one random shoulder from
+a single set you choose.</li></ul><p>Neither has duplicate protection: you can roll a piece you already
+own.</p><p>The question: per 8 keys spent, which option gives me more new
+pieces on average?</p><p><strong>Setup.</strong> A Pledge Master sells $k$ sets. Set $i$ contains $t_i$
+shoulder pieces, of which $u_i$ are still unknown to you. Define:</p>$$N = \sum_{i=1}^{k} t_i \qquad U = \sum_{i=1}^{k} u_i$$<p>so $N$ is the total pool and $U$ is everything you still need.</p><p><strong>Mystery.</strong> A single mystery coffer rolls uniformly over all $N$
+pieces, so:</p>$$\Pr(\text{new from one mystery}) = \frac{U}{N}$$<p>Eight mystery coffers cost the same as one curated. For the
+expected number of <em>distinct</em> new pieces from 8 pulls we use
+linearity of expectation: each of the $U$ unknown pieces is rolled
+at least once with probability $1 - ((N-1)/N)^8$, so</p>$$E_{\text{mystery}} = U \cdot \left[1 - \left(\frac{N-1}{N}\right)^8\right]$$<p>(The linear shortcut $8U/N$ overcounts when the same unknown is
+rolled twice in 8 pulls — the formula above is the strict version.)</p><p><strong>Curated.</strong> A curated coffer of set $i$ rolls uniformly over the
+$t_i$ pieces in that set. Of those, $u_i$ are still unknown. So:</p>$$E_{\text{curated}}(i) = \frac{u_i}{t_i}$$<p>You pick the set that maximizes this:</p>$$E_{\text{curated}}^{*} = \max_{i} \frac{u_i}{t_i}$$<p><strong>The rule.</strong> Mystery wins when:</p>$$U \cdot \left[1 - \left(\frac{N-1}{N}\right)^8\right] \; > \; \max_{i} \frac{u_i}{t_i}$$<p><strong>A useful observation.</strong> Per-key analysis is the cleanest way to
+see why mystery is so dominant for the standard ESO structure.</p><ul><li><strong>Mystery, per key:</strong> one pull, probability of a new piece $U/N$.</li><li><strong>Curated of set $i$, per key:</strong> $1/8$ of a pull, probability of a
+new piece per key is therefore $u_i / (8 t_i)$.</li></ul><p>Mystery wins per key when:</p>$$\frac{U}{N} > \frac{u_i}{8 t_i} \;\;\Longleftrightarrow\;\; 8 \cdot t_i \cdot U > N \cdot u_i$$<p>For the standard Pledge Master structure ($k = 6$ sets, $t_i = 6$
+each, $N = 36$), this simplifies to $8 U > 6 \, u_i$, i.e.
+$U > 0.75 \, u_i$. Since $u_i \le U$ always, this holds whenever
+$U > 0$. In other words, <strong>for a standard 6×6 vendor, mystery
+coffers are mathematically the better buy as long as you still need
+anything at all</strong> — even when only one piece is left in the entire
+36-item pool.</p><p>The threshold flips only when the vendor has more than 8 sets — then
+the mystery pool is diluted enough that targeting via curated
+becomes worthwhile.</p><p><strong>Glirion the Redbeard, worked example.</strong> Glirion sells 6 curated
+coffers, 6 pieces each, so $N = 36$. My current state across the
+six sets:</p><table><thead><tr><th>Set</th><th>$t_i$</th><th>$u_i$</th><th>$u_i / t_i$</th></tr></thead><tbody><tr><td>City of Ash</td><td>6</td><td>2</td><td>33.3%</td></tr><tr><td>Crypt of Hearts</td><td>6</td><td>4</td><td>66.7%</td></tr><tr><td>Frigid Crucible</td><td>6</td><td>5</td><td><strong>83.3%</strong></td></tr><tr><td>Sands and Madness</td><td>6</td><td>4</td><td>66.7%</td></tr><tr><td>Serpents and Sailors</td><td>6</td><td>4</td><td>66.7%</td></tr><tr><td>Winds and Webs</td><td>6</td><td>2</td><td>33.3%</td></tr></tbody></table>$$U = 21, \quad E_{\text{mystery}} = 21 \cdot \left[1 - (35/36)^8\right] \approx 4.24$$<p>Best curated bet is Frigid Crucible at $5/6 \approx 0.833$. So 8
+keys spent on mystery coffers yields about $4.24$ new pieces in
+expectation; 8 keys spent on the best curated yields about $0.83$.
+Mystery wins by a factor of ~$5.1$.</p><p>Edge case sanity check — when only $U = 1$ piece is left anywhere on
+the vendor:</p>$$E_{\text{mystery}} = 1 \cdot \left[1 - (35/36)^8\right] \approx 0.202$$<p>vs. best curated (the set containing that one piece, $1/6 \approx
+0.167$). Mystery still wins by ~3.5 percentage points.</p><p><strong>Urgarlag Chief-bane, the exception.</strong> As of June 2026 Urgarlag&rsquo;s
+lineup is <strong>17 sets</strong> at 6 pieces each, so $N = 102$. With $k = 17
+\gt 8$, the per-key rule no longer holds automatically. Plugging
+into $U \gt (k/8) \cdot u_{\max}$:</p>$$U > \frac{17}{8} \cdot u_{\max} \approx 2.125 \cdot u_{\max}$$<p>Read that as: mystery is the better buy <em>only</em> while your unknowns
+are spread thinly across many sets. The moment most of what you&rsquo;re
+missing concentrates in a single set — i.e. $u_{\max}$ creeps close
+to $U$ — switch to a curated of that set.</p><p>Concrete example: if I still need 10 pieces total and 7 of them sit
+inside one set, $u_{\max} = 7$ and the threshold demands $U > 14.875$.
+With $U = 10$, mystery loses; the curated of that one rich set is
+the better play. If those same 10 unknowns are spread one-per-set
+across 10 different sets, $u_{\max} = 1$, the threshold drops to
+$U > 2.125$, and mystery comfortably wins.</p><p><strong>How many keys to fully clear a vendor?</strong> This is the classic
+<a href=https://en.wikipedia.org/wiki/Coupon_collector%27s_problem>coupon collector&rsquo;s problem</a>.
+Starting from zero pieces, drawing one per mystery coffer, the
+expected number of pulls (= keys) to collect all $N$ pieces is:</p>$$E[\text{keys}] = N \cdot H_N \approx N \cdot (\ln N + \gamma)$$<p>where $H_N = \sum_{k=1}^{N} 1/k$ is the $N$-th harmonic number and
+$\gamma \approx 0.5772$ is the Euler–Mascheroni constant. Plugging in:</p><table><thead><tr><th>Vendor</th><th>$N$</th><th>Expected keys</th></tr></thead><tbody><tr><td>Glirion the Redbeard</td><td>36</td><td>≈ 150</td></tr><tr><td>Maj al-Ragath</td><td>36</td><td>≈ 150</td></tr><tr><td>Urgarlag Chief-bane</td><td>102</td><td>≈ 531</td></tr></tbody></table><p>These numbers assume pure mystery-only play. For Glirion and Maj
+al-Ragath that&rsquo;s also the optimal strategy — the per-key rule above
+proves mystery dominates everywhere. For Urgarlag the optimum cuts
+in some curated purchases toward the end (once one set carries most
+of the remaining unknowns), so the real total comes in somewhat
+below 531; coupon collector still gives the right order of magnitude.</p><p><strong>Takeaways.</strong></p><ul><li><strong>Mystery wins almost always.</strong> For the two standard 6-set
+vendors (Glirion the Redbeard, Maj al-Ragath), it&rsquo;s the
+mathematically better buy as long as you still need anything at
+all — even down to one missing piece out of 36.</li><li><strong>Urgarlag Chief-bane is the exception.</strong> With 17 sets, mystery
+still wins when your unknowns are spread thinly, but the moment
+most of what you need concentrates in a single set, the curated
+of that set beats mystery.</li><li><strong>Curated feels targeted, but it isn&rsquo;t a guarantee.</strong> It still
+rolls randomly inside the chosen set (1/6 per pull). One curated
+for 8 keys rarely beats 8 mystery pulls.</li><li><strong>Clearing a vendor from scratch costs ~150 keys</strong> for Glirion
+or Maj al-Ragath, and <strong>~531 keys</strong> for Urgarlag — by the
+coupon-collector formula above.</li></ul><p>I made a calculator that does the table and rule above for
+arbitrary vendor configurations:
+<a href=/tools/eso-coffer-calculator/><strong>ESO coffer calculator →</strong></a></p></article></div><footer class=site><span>&copy; 2026 vitalii rudnykh</span>
+<span class=dot>·</span>
+<a href=mailto:i@rudnkh.me>email</a>
+<span class=dot>·</span>
+<a href=https://github.com/a2u>github</a>
+<span class=dot>·</span>
+<a href=https://x.com/rudnkh>x</a>
+<span class=dot>·</span>
+<a href=https://instagram.com/rudnkh>instagram</a></footer></body></html>
