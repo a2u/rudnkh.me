@@ -12,3 +12,5 @@ photos:
   - watching/the-usual-suspects/5.jpg
   - watching/the-usual-suspects/6.jpg
 ---
+
+Excellent film with one of cinema's most iconic twist endings.
