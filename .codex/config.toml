@@ -1,0 +1,7 @@
+default_permissions = "blog_workspace"
+
+[permissions.blog_workspace]
+extends = ":workspace"
+
+[permissions.blog_workspace.filesystem.":workspace_roots"]
+"content/notes/ai-cant-read-this-note" = "deny"
