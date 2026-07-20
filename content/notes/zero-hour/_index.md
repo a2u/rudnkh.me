@@ -2,15 +2,6 @@
 title: "From zero-day to zero-hour"
 date: 2026-07-18
 layout: single
-translations:
-  - lang: ru
-    url: /notes/zero-hour/ru/
-  - lang: pt
-    url: /notes/zero-hour/pt/
-  - lang: de
-    url: /notes/zero-hour/de/
-  - lang: fr
-    url: /notes/zero-hour/fr/
 ---
 
 ![Illustration for "From zero-day to zero-hour"](/images/notes/zero-hour.png)
