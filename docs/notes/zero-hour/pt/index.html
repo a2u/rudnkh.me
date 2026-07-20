@@ -1,0 +1,27 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>De zero-day a zero-hour — Vitalii Rudnykh</title><meta name=description content="vitalii rudnykh — personal site"><link rel="shortcut icon" href=/favicon.ico><link rel=stylesheet href=/css/style.css></head><body class="section notes notes-single"><div class=container><div class=topbar><a class=brand href=/>rudnkh.me</a><span class=sep>/</span><a class=crumb href=/notes/>notes</a><span class=sep>/</span><a class=crumb href=/notes/zero-hour/>zero-hour</a><span class=sep>/</span><a class=crumb href=/notes/zero-hour/pt/>pt</a></div><article><h1>De zero-day a zero-hour</h1><p class=meta><time datetime=2026-07-18>18 July 2026</time>
+<span class=translations>also in <a href=/notes/zero-hour/ hreflang=en>en</a> <a href=/notes/zero-hour/ru/ hreflang=ru>ru</a> <a href=/notes/zero-hour/de/ hreflang=de>de</a> <a href=/notes/zero-hour/fr/ hreflang=fr>fr</a></span></p><p><img src=/images/notes/zero-hour.png alt="Ilustração para a nota «De zero-day a zero-hour»"></p><p>Lembro-me de quando os exploits demoravam semanas, por vezes meses,
+a aparecer depois de uma vulnerabilidade ser divulgada. Um patch
+saía, o diff ficava à vista de todos — e o mundo ainda tinha um
+período de graça. Discutia-se prazos de responsible disclosure
+medidos em dias.</p><p>O bug do core do WordPress deste fim de semana, wp2shell,
+<a href=https://nvd.nist.gov/vuln/detail/CVE-2026-63030>CVE-2026-63030</a> encadeado com
+<a href=https://nvd.nist.gov/vuln/detail/CVE-2026-60137>CVE-2026-60137</a>, é um bom exemplo.
+Uma RCE (execução remota de código) não num plugin abandonado, mas
+no próprio core — o software que faz correr uma fatia enorme da web.
+Poucas horas após o advisory, investigadores já alimentavam o
+problema a modelos frontier. Um reportou uma proof of concept
+totalmente funcional em menos de uma hora.</p><p>Os modelos de IA frontier facilitam transformar vulnerabilidades
+divulgadas em exploits que funcionam. Encontrar o bug ainda exige
+talento. Transformar um patch público numa PoC funcional exigia
+antes o mesmo tipo de talento: reverse engineering, montar a
+cadeia, afinar o payload. O zero-day está a tornar-se zero-hour:
+o prazo entre divulgação e exploração comprime-se de semanas para
+horas.</p><p>As janelas de patching já tinham encolhido muito. Já lá estamos.</p></article></div><footer class=site><span>&copy; 2026 vitalii rudnykh</span>
+<span class=dot>·</span>
+<a href=mailto:i@rudnkh.me>email</a>
+<span class=dot>·</span>
+<a href=https://github.com/a2u>github</a>
+<span class=dot>·</span>
+<a href=https://x.com/rudnkh>x</a>
+<span class=dot>·</span>
+<a href=https://instagram.com/rudnkh>instagram</a></footer></body></html>

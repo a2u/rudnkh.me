@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>From zero-day to zero-hour on Vitalii Rudnykh</title><link>https://rudnkh.me/notes/zero-hour/</link><description>Recent content in From zero-day to zero-hour on Vitalii Rudnykh</description><generator>Hugo</generator><language>en</language><lastBuildDate/><atom:link href="https://rudnkh.me/notes/zero-hour/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>From zero-day to zero-hour on Vitalii Rudnykh</title><link>https://rudnkh.me/notes/zero-hour/</link><description>Recent content in From zero-day to zero-hour on Vitalii Rudnykh</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://rudnkh.me/notes/zero-hour/index.xml" rel="self" type="application/rss+xml"/><item><title>De zero-day a zero-hour</title><link>https://rudnkh.me/notes/zero-hour/pt/</link><pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/zero-hour/pt/</guid><description>&lt;p&gt;&lt;img src="https://rudnkh.me/images/notes/zero-hour.png" alt="Ilustração para a nota «De zero-day a zero-hour»"&gt;&lt;/p&gt;
+&lt;p&gt;Lembro-me de quando os exploits demoravam semanas, por vezes meses,
+a aparecer depois de uma vulnerabilidade ser divulgada. Um patch
+saía, o diff ficava à vista de todos — e o mundo ainda tinha um
+período de graça. Discutia-se prazos de responsible disclosure
+medidos em dias.&lt;/p&gt;
+&lt;p&gt;O bug do core do WordPress deste fim de semana, wp2shell,
+&lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030"&gt;CVE-2026-63030&lt;/a&gt; encadeado com
+&lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137"&gt;CVE-2026-60137&lt;/a&gt;, é um bom exemplo.
+Uma RCE (execução remota de código) não num plugin abandonado, mas
+no próprio core — o software que faz correr uma fatia enorme da web.
+Poucas horas após o advisory, investigadores já alimentavam o
+problema a modelos frontier. Um reportou uma proof of concept
+totalmente funcional em menos de uma hora.&lt;/p&gt;</description></item><item><title>Du zero-day au zero-hour</title><link>https://rudnkh.me/notes/zero-hour/fr/</link><pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/zero-hour/fr/</guid><description>&lt;p&gt;&lt;img src="https://rudnkh.me/images/notes/zero-hour.png" alt="Illustration pour la note « Du zero-day au zero-hour »"&gt;&lt;/p&gt;
+&lt;p&gt;Je me souviens d&amp;rsquo;une époque où les exploits mettaient des semaines,
+parfois des mois, à apparaître après la divulgation d&amp;rsquo;une vulnérabilité.
+Un correctif sortait, le diff restait visible de tous — et le monde
+disposait encore d&amp;rsquo;un délai de grâce. On se disputait sur les délais
+de responsible disclosure, comptés en jours.&lt;/p&gt;
+&lt;p&gt;Le bug du cœur de WordPress de ce week-end, wp2shell,
+&lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030"&gt;CVE-2026-63030&lt;/a&gt; enchaîné avec
+&lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137"&gt;CVE-2026-60137&lt;/a&gt;, en est un bon exemple.
+Une RCE (exécution de code à distance) non pas dans un plugin
+négligé, mais dans le core lui-même — le logiciel qui fait tourner
+une part énorme du web. En quelques heures après l&amp;rsquo;advisory, des
+chercheurs nourrissaient déjà le problème aux modèles frontier. L&amp;rsquo;un
+d&amp;rsquo;eux a annoncé une preuve de concept pleinement fonctionnelle en
+moins d&amp;rsquo;une heure.&lt;/p&gt;</description></item><item><title>Von Zero-Day zu Zero-Hour</title><link>https://rudnkh.me/notes/zero-hour/de/</link><pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/zero-hour/de/</guid><description>&lt;p&gt;&lt;img src="https://rudnkh.me/images/notes/zero-hour.png" alt="Illustration zum Beitrag „Von Zero-Day zu Zero-Hour“"&gt;&lt;/p&gt;
+&lt;p&gt;Ich erinnere mich an Zeiten, in denen Exploits erst Wochen,
+manchmal Monate nach der Offenlegung einer Schwachstelle
+auftauchten. Ein Patch landete, der Diff lag öffentlich einsehbar
+da — und die Welt hatte trotzdem noch eine Gnadenfrist. Man stritt
+über Responsible-Disclosure-Fristen, gemessen in Tagen.&lt;/p&gt;
+&lt;p&gt;Der WordPress-Core-Bug dieses Wochenendes, wp2shell,
+&lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030"&gt;CVE-2026-63030&lt;/a&gt; in Kombination mit
+&lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137"&gt;CVE-2026-60137&lt;/a&gt;, ist ein gutes Beispiel.
+Eine RCE (Remote Code Execution) nicht in einem vernachlässigten
+Plugin, sondern im Core selbst — der Software, auf der ein großer
+Teil des Webs läuft. Innerhalb weniger Stunden nach dem Advisory
+fütterten Forschende das Problem bereits an Frontier-Modelle. Einer
+meldete einen voll funktionierenden Proof of Concept in weniger als
+einer Stunde.&lt;/p&gt;</description></item><item><title>От zero-day к zero-hour</title><link>https://rudnkh.me/notes/zero-hour/ru/</link><pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate><guid>https://rudnkh.me/notes/zero-hour/ru/</guid><description>&lt;p&gt;&lt;img src="https://rudnkh.me/images/notes/zero-hour.png" alt="Иллюстрация к заметке «От zero-day к zero-hour»"&gt;&lt;/p&gt;
+&lt;p&gt;Помню времена, когда после раскрытия уязвимости эксплойты
+появлялись через недели, а иногда и месяцы. Патч выходил, diff
+лежал у всех на виду — и у мира всё ещё был льготный период.
+Спорили о сроках responsible disclosure, измеряемых днями.&lt;/p&gt;
+&lt;p&gt;Баг в ядре WordPress на этих выходных, wp2shell,
+&lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030"&gt;CVE-2026-63030&lt;/a&gt; в связке с
+&lt;a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137"&gt;CVE-2026-60137&lt;/a&gt;, — хороший пример.
+RCE (удалённое выполнение кода) не в заброшенном плагине, а в
+самом ядре ПО, на котором крутится огромная доля веба. Через
+считаные часы после advisory исследователи уже скармливали
+проблему frontier-моделям. Один сообщил о полностью рабочем
+proof of concept меньше чем за час.&lt;/p&gt;</description></item></channel></rss>

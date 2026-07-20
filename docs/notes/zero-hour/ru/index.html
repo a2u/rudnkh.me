@@ -1,0 +1,25 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>От zero-day к zero-hour — Vitalii Rudnykh</title><meta name=description content="vitalii rudnykh — personal site"><link rel="shortcut icon" href=/favicon.ico><link rel=stylesheet href=/css/style.css></head><body class="section notes notes-single"><div class=container><div class=topbar><a class=brand href=/>rudnkh.me</a><span class=sep>/</span><a class=crumb href=/notes/>notes</a><span class=sep>/</span><a class=crumb href=/notes/zero-hour/>zero-hour</a><span class=sep>/</span><a class=crumb href=/notes/zero-hour/ru/>ru</a></div><article><h1>От zero-day к zero-hour</h1><p class=meta><time datetime=2026-07-18>18 July 2026</time>
+<span class=translations>also in <a href=/notes/zero-hour/ hreflang=en>en</a> <a href=/notes/zero-hour/pt/ hreflang=pt>pt</a> <a href=/notes/zero-hour/de/ hreflang=de>de</a> <a href=/notes/zero-hour/fr/ hreflang=fr>fr</a></span></p><p><img src=/images/notes/zero-hour.png alt="Иллюстрация к заметке «От zero-day к zero-hour»"></p><p>Помню времена, когда после раскрытия уязвимости эксплойты
+появлялись через недели, а иногда и месяцы. Патч выходил, diff
+лежал у всех на виду — и у мира всё ещё был льготный период.
+Спорили о сроках responsible disclosure, измеряемых днями.</p><p>Баг в ядре WordPress на этих выходных, wp2shell,
+<a href=https://nvd.nist.gov/vuln/detail/CVE-2026-63030>CVE-2026-63030</a> в связке с
+<a href=https://nvd.nist.gov/vuln/detail/CVE-2026-60137>CVE-2026-60137</a>, — хороший пример.
+RCE (удалённое выполнение кода) не в заброшенном плагине, а в
+самом ядре ПО, на котором крутится огромная доля веба. Через
+считаные часы после advisory исследователи уже скармливали
+проблему frontier-моделям. Один сообщил о полностью рабочем
+proof of concept меньше чем за час.</p><p>Frontier AI-модели упрощают превращение раскрытых уязвимостей
+в рабочие эксплойты. Найти баг по-прежнему требует таланта.
+А вот превратить публичный патч в рабочий PoC раньше требовало
+того же уровня: реверс-инжиниринг, сборка цепочки, доводка
+payload. Zero-day превращается в zero-hour: срок от disclosure
+до эксплуатации сжимается с недель до часов.</p><p>Окна на патчинг и раньше становились всё короче. Мы уже здесь.</p></article></div><footer class=site><span>&copy; 2026 vitalii rudnykh</span>
+<span class=dot>·</span>
+<a href=mailto:i@rudnkh.me>email</a>
+<span class=dot>·</span>
+<a href=https://github.com/a2u>github</a>
+<span class=dot>·</span>
+<a href=https://x.com/rudnkh>x</a>
+<span class=dot>·</span>
+<a href=https://instagram.com/rudnkh>instagram</a></footer></body></html>
