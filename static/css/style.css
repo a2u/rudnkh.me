@@ -231,21 +231,32 @@ body.watching-list article h2:first-of-type,
 body.playing-list article h2:first-of-type { margin-top: 1em; }
 body.watching-list article h3,
 body.playing-list article h3 {
-  color: var(--fg-muted);
-  font-size: 0.72rem;
-  font-weight: 400;
+  color: var(--fg-strong);
+  font-size: 0.84rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  margin: 1.4em 0 0.2em;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  margin: 1.8em 0 0.35em;
+  padding-left: 0.7em;
+  border-left: 2px solid rgba(0, 254, 139, 0.55);
 }
 body.watching-list article ul.entries-watching,
 body.playing-list article ul.entries-playing { margin-top: 0.3em; margin-bottom: 0; }
 
-/* Watching list — day, title (kind badge inline after title) */
+/* Watching list — calendar date, title (kind badge inline after title) */
 ul.entries-watching li {
-  grid-template-columns: 4.5em 1fr;
-  gap: 0.8em;
+  grid-template-columns: 3.2em 1fr;
+  gap: 1em;
   align-items: baseline;
+}
+ul.entries-watching li time {
+  padding: 0.05em 0.9em 0.05em 0;
+  border-right: 1px solid var(--rule);
+  color: var(--fg-strong);
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
 }
 
 /* External links in meta (playing, watching) */
@@ -408,4 +419,5 @@ tbody tr:hover { background: var(--bg-soft); }
   body.home nav.primary li { grid-template-columns: 5em 1fr; gap: 0.8em; }
   ul.entries li { grid-template-columns: 1fr; gap: 0.1em; padding: 0.6em 0; }
   ul.entries li time { font-size: 0.8rem; }
+  ul.entries-watching li { grid-template-columns: 3em 1fr; gap: 0.8em; }
 }

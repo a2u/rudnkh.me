@@ -37,7 +37,7 @@
           {{ $genre := .Params.genre }}
           {{ $label := cond (eq $genre "anime") "anime" $media }}
           <li>
-            <time>{{ .Date.Format "2 Jan" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2" }}</time>
             <span class="title">
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
               <span class="kind kind-{{ $media }}{{ with $genre }} kind-{{ . }}{{ end }}">{{ $label }}</span>
