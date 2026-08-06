@@ -4,4 +4,14 @@ default_permissions = "blog_workspace"
 extends = ":workspace"
 
 [permissions.blog_workspace.filesystem.":workspace_roots"]
+".git" = "write"
 "content/notes/ai-cant-read-this-note" = "deny"
+
+[permissions.blog_workspace.network]
+enabled = true
+allow_local_binding = true
+
+[permissions.blog_workspace.network.domains]
+"*" = "allow"
+"localhost" = "allow"
+"127.0.0.1" = "allow"
