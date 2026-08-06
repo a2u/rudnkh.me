@@ -9,7 +9,10 @@
         <ul class="entries entries-playing">
           {{ range .Pages }}
           <li>
-            <time>{{ .Date.Format "2 Jan" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+              <span class="date-day">{{ .Date.Format "2" }}</span>
+              <span class="date-month">{{ .Date.Format "Jan" }}</span>
+            </time>
             <span class="title">
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
               {{ with .Params.year }}<span class="year">({{ . }})</span>{{ end }}

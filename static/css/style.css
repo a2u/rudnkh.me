@@ -244,13 +244,15 @@ body.playing-list article h3 {
 body.watching-list article ul.entries-watching,
 body.playing-list article ul.entries-playing { margin-top: 0.3em; margin-bottom: 0; }
 
-/* Watching list — calendar date, title (kind badge inline after title) */
-ul.entries-watching li {
+/* Watching + Playing lists — calendar date, title */
+ul.entries-watching li,
+ul.entries-playing li {
   grid-template-columns: 5.2em 1fr;
   gap: 1em;
   align-items: baseline;
 }
-ul.entries-watching li time {
+ul.entries-watching li time,
+ul.entries-playing li time {
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -261,7 +263,8 @@ ul.entries-watching li time {
   font-size: 0.88rem;
   font-variant-numeric: tabular-nums;
 }
-ul.entries-watching li .date-month {
+ul.entries-watching li .date-month,
+ul.entries-playing li .date-month {
   color: var(--fg-muted);
   font-size: 1em;
   letter-spacing: 0.04em;
@@ -355,13 +358,6 @@ dialog.lightbox .counter {
   margin: 0;
 }
 
-/* Playing list — day, title (with release year) */
-ul.entries-playing li {
-  grid-template-columns: 4.5em 1fr;
-  gap: 0.8em;
-  align-items: baseline;
-}
-
 /* Watching season page — episode list (full date includes year) */
 ul.entries-episodes li {
   grid-template-columns: 6em 1fr;
@@ -428,5 +424,6 @@ tbody tr:hover { background: var(--bg-soft); }
   body.home nav.primary li { grid-template-columns: 5em 1fr; gap: 0.8em; }
   ul.entries li { grid-template-columns: 1fr; gap: 0.1em; padding: 0.6em 0; }
   ul.entries li time { font-size: 0.8rem; }
-  ul.entries-watching li { grid-template-columns: 4.8em 1fr; gap: 0.8em; }
+  ul.entries-watching li,
+  ul.entries-playing li { grid-template-columns: 4.8em 1fr; gap: 0.8em; }
 }
