@@ -6,7 +6,7 @@ Things I've built.
 
 ## 2026
 
-- **[Monster](https://monster.rudnkh.me)** — fan site mapping Monster Energy
+- **[Monster Tracker](https://monster.rudnkh.me)** — fan site mapping Monster Energy
   cans I’ve found around the world. Each find pairs a photo with its purchase
   location and local time, all plotted on an interactive map.
 - **[herdr-jira](https://github.com/a2u/herdr-jira)** — Jira TUI plugin for
