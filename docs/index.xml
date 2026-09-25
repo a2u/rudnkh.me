@@ -310,9 +310,6 @@ later and pick up where you left off.&lt;/p&gt;</description></item><item><title
 &lt;/ul&gt;</description></item><item><title>Projects</title><link>https://rudnkh.me/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rudnkh.me/projects/</guid><description>&lt;p&gt;Things I&amp;rsquo;ve built.&lt;/p&gt;
 &lt;h2 id="2026"&gt;2026&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://monster.rudnkh.me"&gt;Monster Tracker&lt;/a&gt;&lt;/strong&gt; — fan site mapping Monster Energy
-cans I’ve found around the world. Each find pairs a photo with its purchase
-location and local time, all plotted on an interactive map.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://github.com/a2u/herdr-jira"&gt;herdr-jira&lt;/a&gt;&lt;/strong&gt; — Jira TUI plugin for
 &lt;a href="https://herdr.dev"&gt;herdr&lt;/a&gt;. Browse issues via JQL filters, change status,
 and delegate work to AI agents in the terminal.&lt;/li&gt;
