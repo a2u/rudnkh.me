@@ -150,6 +150,24 @@ body.home h1 {
   margin: 0 0 0.35em;
 }
 body.home .tagline { margin: 0 0 2.5em; max-width: 34em; color: var(--fg); }
+body.home .intro {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas: "head pic" "nav pic";
+  grid-template-rows: auto 1fr;
+  column-gap: 2em;
+  align-items: start;
+}
+body.home .intro header { grid-area: head; min-width: 0; }
+body.home .intro nav.primary { grid-area: nav; min-width: 0; }
+body.home .portrait {
+  grid-area: pic;
+  width: 200px;
+  height: 200px;
+  /* cut-out photo: fade the cropped shoulders into the page background */
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+}
 body.home nav.primary ul { list-style: none; margin: 0; padding: 0; }
 body.home nav.primary li {
   display: grid;
@@ -422,6 +440,9 @@ tbody tr:hover { background: var(--bg-soft); }
   html { font-size: 14px; }
   .container, footer.site { padding-left: 1em; padding-right: 1em; }
   body.home nav.primary li { grid-template-columns: 5em 1fr; gap: 0.8em; }
+  /* photo sits beside the name only; nav gets the full width below */
+  body.home .intro { grid-template-columns: 1fr 96px; grid-template-areas: "head pic" "nav nav"; column-gap: 1em; }
+  body.home .portrait { width: 96px; height: 96px; }
   ul.entries li { grid-template-columns: 1fr; gap: 0.1em; padding: 0.6em 0; }
   ul.entries li time { font-size: 0.8rem; }
   ul.entries-watching li,
